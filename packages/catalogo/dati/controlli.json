@@ -1,0 +1,106 @@
+{
+  "controlli": [
+    {
+      "codice": "C01",
+      "titolo": "Persone con accesso attivo ma già cessate",
+      "gravita": "bloccante",
+      "comeCorreggere": "Revocare subito l'accesso sulla piattaforma, poi impostare Stato = Revocato e la data nel Registro."
+    },
+    {
+      "codice": "C02",
+      "titolo": "Utenti presenti sulla piattaforma ma non censiti nel registro",
+      "gravita": "bloccante",
+      "comeCorreggere": "Accessi mai autorizzati o non documentati: verificarne la legittimità, poi censirli o revocarli."
+    },
+    {
+      "codice": "C03",
+      "titolo": "Accessi attivi nel registro non trovati nell'ultima estrazione",
+      "gravita": "alta",
+      "comeCorreggere": "Probabile accesso già rimosso sulla piattaforma: aggiornare lo stato nel Registro."
+    },
+    {
+      "codice": "C04",
+      "titolo": "Profilo diverso tra registro e piattaforma",
+      "gravita": "alta",
+      "comeCorreggere": "Il privilegio è cambiato senza autorizzazione o il registro è disallineato: verificare quale delle due è corretta."
+    },
+    {
+      "codice": "C05",
+      "titolo": "Utenti sulla piattaforma con accesso non attivo nel registro",
+      "gravita": "alta",
+      "comeCorreggere": "Revoca dichiarata ma non eseguita: rimuovere l'accesso sulla piattaforma."
+    },
+    {
+      "codice": "C06",
+      "titolo": "Accessi attivi senza autenticazione a due fattori",
+      "gravita": "alta",
+      "comeCorreggere": "Attivare la verifica in due passaggi sull'account usato per l'accesso."
+    },
+    {
+      "codice": "C07",
+      "titolo": "Accessi attivi mai verificati o verificati da oltre 180 giorni",
+      "gravita": "alta",
+      "comeCorreggere": "Includerli nella campagna di verifica in corso: confermare, ridurre o revocare."
+    },
+    {
+      "codice": "C08",
+      "titolo": "Doppio accesso attivo della stessa persona sullo stesso asset",
+      "gravita": "media",
+      "comeCorreggere": "Righe duplicate o due profili sovrapposti: consolidare in una sola riga."
+    },
+    {
+      "codice": "C09",
+      "titolo": "Righe con persona indicata ma senza profilo autorizzativo",
+      "gravita": "media",
+      "comeCorreggere": "Completare la colonna \"Profilo autorizzativo\" scegliendo dal menu."
+    },
+    {
+      "codice": "C10",
+      "titolo": "Profili non presenti in Legenda",
+      "gravita": "media",
+      "comeCorreggere": "La combinazione piattaforma / tipo asset / profilo non esiste in Legenda: correggere la riga o aggiungere il profilo in Legenda."
+    },
+    {
+      "codice": "C11",
+      "titolo": "Persone non presenti in anagrafica",
+      "gravita": "media",
+      "comeCorreggere": "Aggiungere la persona nel foglio Legenda-dipendenti."
+    },
+    {
+      "codice": "C12",
+      "titolo": "Codici asset del registro non presenti in anagrafica asset",
+      "gravita": "media",
+      "comeCorreggere": "Aggiungere l'asset nel foglio Asset o correggere il codice nel Registro."
+    },
+    {
+      "codice": "C13",
+      "titolo": "Accessi attivi senza data di concessione",
+      "gravita": "media",
+      "comeCorreggere": "Ricostruire e inserire la data in cui l'accesso è stato concesso."
+    },
+    {
+      "codice": "C14",
+      "titolo": "Accessi revocati senza data di revoca",
+      "gravita": "media",
+      "comeCorreggere": "Inserire la data di revoca: è l'evidenza che dimostra l'avvenuta rimozione."
+    },
+    {
+      "codice": "C15",
+      "titolo": "Asset senza titolare del trattamento indicato",
+      "gravita": "media",
+      "comeCorreggere": "Indicare chi è il titolare del trattamento per quell'asset (di norma il cliente)."
+    },
+    {
+      "codice": "C16",
+      "titolo": "Asset attivi con verifica scaduta o non pianificata",
+      "gravita": "media",
+      "comeCorreggere": "Fissare la data della prossima verifica accessi per quell'asset."
+    },
+    {
+      "codice": "C17",
+      "titolo": "Accessi attivi a rischio privacy alto",
+      "gravita": "informativo",
+      "comeCorreggere": "Non è un errore: verificare che ciascuno sia effettivamente necessario (minimizzazione)."
+    }
+  ]
+}

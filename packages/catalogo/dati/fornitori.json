@@ -1,0 +1,118 @@
+{
+  "aggiornatoIl": "2026-09-08",
+  "avvertenza": "Ruoli privacy, garanzie sui trasferimenti e riferimenti contrattuali cambiano nel tempo: confermarli presso il fornitore e con il consulente privacy o il DPO prima di riportarli in documentazione ufficiale.",
+  "fornitori": [
+    {
+      "piattaforma": "Meta",
+      "fornitore": "Meta Platforms Ireland Ltd. (Irlanda)",
+      "ruoloPrivacyFornitore": "Contitolare con il cliente per gli Insights della Pagina e per i dati del dataset/Pixel e Conversions API; titolare autonomo per gli usi propri.",
+      "trasferimentoExtraUe": "Sì - USA. Verificare l'adesione al Data Privacy Framework e/o le clausole contrattuali tipo in vigore.",
+      "riferimentiContrattuali": "Meta Business Tools Terms, Page Insights Controller Addendum, Data Processing Terms.",
+      "notaVerifica": "Da riverificare a ogni revisione."
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "fornitore": "LinkedIn Ireland Unlimited Company (Irlanda)",
+      "ruoloPrivacyFornitore": "Contitolare con il cliente per le Page Analytics; titolare autonomo per gli usi propri; per i Lead Gen Form i dati raccolti sono del titolare.",
+      "trasferimentoExtraUe": "Sì - USA. Verificare l'adesione al Data Privacy Framework e/o le clausole contrattuali tipo in vigore.",
+      "riferimentiContrattuali": "LinkedIn Ads Agreement, Page Insights Joint Controller Addendum.",
+      "notaVerifica": "Da riverificare a ogni revisione."
+    },
+    {
+      "piattaforma": "TikTok",
+      "fornitore": "TikTok Technology Limited (Irlanda) / TikTok Information Technologies UK Limited",
+      "ruoloPrivacyFornitore": "Contitolare per i dati del pixel e dei moduli lead secondo i termini del fornitore; titolare autonomo per gli usi propri.",
+      "trasferimentoExtraUe": "Da verificare: il fornitore dichiara trasferimenti verso Paesi terzi con clausole contrattuali tipo.",
+      "riferimentiContrattuali": "TikTok Business Products (Data) Terms, Jurisdiction Specific Terms.",
+      "notaVerifica": "Da riverificare a ogni revisione."
+    },
+    {
+      "piattaforma": "Google",
+      "fornitore": "Google Ireland Limited (Irlanda)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento per Analytics, Tag Manager e Search Console; contitolare o titolare autonomo per alcuni trattamenti pubblicitari di Google Ads.",
+      "trasferimentoExtraUe": "Sì - USA. Verificare l'adesione al Data Privacy Framework e/o le clausole contrattuali tipo in vigore.",
+      "riferimentiContrattuali": "Google Ads Data Processing Terms, Google Analytics Terms of Service, Customer Match policy.",
+      "notaVerifica": "Verificare anche le impostazioni di conservazione dei dati e la disattivazione della condivisione dati."
+    },
+    {
+      "piattaforma": "Brevo",
+      "fornitore": "Brevo SAS (Francia)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati dei contatti caricati dal titolare.",
+      "trasferimentoExtraUe": "Da verificare in base alla regione di archiviazione e ai sub-responsabili dichiarati.",
+      "riferimentiContrattuali": "Brevo Data Processing Agreement, elenco dei sub-responsabili.",
+      "notaVerifica": "Verificare l'elenco aggiornato dei sub-responsabili."
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "fornitore": "Intuit Inc. / Rocket Science Group LLC (USA)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati del pubblico caricati dal titolare.",
+      "trasferimentoExtraUe": "Sì - USA. Verificare l'adesione al Data Privacy Framework e/o le clausole contrattuali tipo in vigore.",
+      "riferimentiContrattuali": "Mailchimp Data Processing Addendum, Standard Contractual Clauses.",
+      "notaVerifica": "Da riverificare a ogni revisione."
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "fornitore": "Benhauer sp. z o.o. (Polonia)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati dei contatti gestiti nella piattaforma.",
+      "trasferimentoExtraUe": "Da verificare in base ai sub-responsabili e alle sedi di archiviazione dichiarate.",
+      "riferimentiContrattuali": "Contratto di servizio e accordo sul trattamento dei dati (DPA).",
+      "notaVerifica": "Verificare la nomina a responsabile e l'elenco dei sub-responsabili."
+    },
+    {
+      "piattaforma": "Emarsys",
+      "fornitore": "SAP SE / Emarsys eMarketing Systems GmbH (Austria)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati dei contatti gestiti nella piattaforma.",
+      "trasferimentoExtraUe": "Da verificare in base al data center contrattualizzato e ai sub-responsabili.",
+      "riferimentiContrattuali": "SAP Data Processing Agreement, elenco dei sub-responsabili SAP.",
+      "notaVerifica": "Verificare il data center assegnato all'account."
+    },
+    {
+      "piattaforma": "Salesforce",
+      "fornitore": "Salesforce, Inc. / Salesforce Ireland Limited",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati gestiti nell'organizzazione del titolare.",
+      "trasferimentoExtraUe": "Da verificare in base alla region dell'istanza e alle garanzie dichiarate dal fornitore.",
+      "riferimentiContrattuali": "Salesforce Data Processing Addendum, Trust and Compliance documentation.",
+      "notaVerifica": "Verificare la region dell'istanza e i servizi attivi."
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "fornitore": "Microsoft Ireland Operations Limited",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati gestiti nell'ambiente del titolare.",
+      "trasferimentoExtraUe": "Da verificare: Microsoft dichiara l'archiviazione nell'UE per i dati dei clienti dei servizi cloud (EU Data Boundary).",
+      "riferimentiContrattuali": "Microsoft Products and Services Data Protection Addendum (DPA).",
+      "notaVerifica": "Verificare la regione dell'ambiente e i servizi attivi."
+    },
+    {
+      "piattaforma": "WordPress",
+      "fornitore": "Fornitore di hosting e sviluppatori dei plugin installati",
+      "ruoloPrivacyFornitore": "Il fornitore di hosting è responsabile del trattamento (art. 28 GDPR); i plugin di terze parti possono introdurre ulteriori responsabili o titolari autonomi.",
+      "trasferimentoExtraUe": "Da verificare in base alla sede dei server e ai servizi esterni richiamati dal sito.",
+      "riferimentiContrattuali": "Nomina a responsabile del fornitore di hosting; verifica dei plugin che trasmettono dati a terzi.",
+      "notaVerifica": "Censire i plugin che raccolgono o trasmettono dati personali."
+    },
+    {
+      "piattaforma": "Shopify",
+      "fornitore": "Shopify International Limited (Irlanda)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) per i dati di clienti e ordini del negozio; le app installate possono essere responsabili autonomi.",
+      "trasferimentoExtraUe": "Da verificare: il fornitore dichiara trasferimenti verso Paesi terzi con garanzie adeguate.",
+      "riferimentiContrattuali": "Shopify Data Processing Addendum; termini delle singole app installate.",
+      "notaVerifica": "Censire le app installate che accedono ai dati dei clienti."
+    },
+    {
+      "piattaforma": "Linktree",
+      "fornitore": "Linktree Pty Ltd (Australia)",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento per i dati raccolti tramite i moduli; titolare autonomo per i dati di utilizzo della piattaforma.",
+      "trasferimentoExtraUe": "Da verificare: fornitore extra-UE, verificare le garanzie adeguate dichiarate.",
+      "riferimentiContrattuali": "Linktree Terms of Service e Privacy Policy; eventuale DPA.",
+      "notaVerifica": "Verificare l'esistenza di un accordo sul trattamento dei dati."
+    },
+    {
+      "piattaforma": "Interno",
+      "fornitore": "Da compilare: fornitore di cloud storage effettivamente utilizzato",
+      "ruoloPrivacyFornitore": "Responsabile del trattamento (art. 28 GDPR) se il servizio ospita dati personali per conto del titolare.",
+      "trasferimentoExtraUe": "Da verificare in base al fornitore e alla regione di archiviazione.",
+      "riferimentiContrattuali": "Nomina a responsabile del trattamento ex art. 28 GDPR.",
+      "notaVerifica": "Compilare con il fornitore effettivamente utilizzato."
+    }
+  ]
+}

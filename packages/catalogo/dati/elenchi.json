@@ -1,0 +1,98 @@
+{
+  "statoAccesso": [
+    "Da attivare",
+    "Attivo",
+    "Sospeso",
+    "Revocato"
+  ],
+  "statoAsset": [
+    "Attivo",
+    "Dismesso"
+  ],
+  "statoPersona": [
+    "Attivo",
+    "Cessato",
+    "Sospeso"
+  ],
+  "ruoloPrivacy": [
+    "Titolare del trattamento",
+    "Contitolare (art. 26)",
+    "Responsabile del trattamento (art. 28)",
+    "Sub-responsabile (art. 28.4)",
+    "Persona autorizzata (art. 29)"
+  ],
+  "baseGiuridica": [
+    "Contratto (art. 6.1.b)",
+    "Consenso (art. 6.1.a)",
+    "Obbligo legale (art. 6.1.c)",
+    "Legittimo interesse (art. 6.1.f)",
+    "Da definire"
+  ],
+  "trasferimentoExtraUe": [
+    "No - dati solo in SEE",
+    "Sì - Data Privacy Framework",
+    "Sì - Clausole contrattuali tipo (art. 46)",
+    "Sì - altra garanzia adeguata",
+    "Da verificare"
+  ],
+  "siNo": [
+    "Sì",
+    "No",
+    "Non applicabile",
+    "Da verificare"
+  ],
+  "tipoModifica": [
+    "Nuovo accesso",
+    "Modifica profilo",
+    "Revoca accesso",
+    "Verifica periodica",
+    "Aggiornamento anagrafica",
+    "Altro"
+  ],
+  "rapportoLavoro": [
+    "SDB",
+    "P.IVA",
+    "Cliente",
+    "Altro fornitore"
+  ],
+  "livelloRischio": [
+    "Alto",
+    "Medio",
+    "Basso"
+  ],
+  "esitoVerifica": [
+    "Confermato",
+    "Profilo ridotto",
+    "Revocato",
+    "Da verificare"
+  ],
+  "fonteEstrazione": [
+    "Meta",
+    "LinkedIn",
+    "Google Analytics 4",
+    "Google Ads"
+  ],
+  "piattaforme": [
+    "Brevo",
+    "Emarsys",
+    "Google",
+    "Interno",
+    "LinkedIn",
+    "Linktree",
+    "Mailchimp",
+    "Meta",
+    "Microsoft Dynamics 365",
+    "SALESmanago",
+    "Salesforce",
+    "Shopify",
+    "TikTok",
+    "WordPress"
+  ],
+  "ruoloAziendale": [
+    "Account",
+    "Amministrazione",
+    "Design",
+    "Digital",
+    "Titolare"
+  ]
+}

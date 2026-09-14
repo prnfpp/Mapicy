@@ -1,0 +1,321 @@
+{
+  "tipiAsset": [
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "codice": "META_BM",
+      "profili": [
+        "Accesso come amministratore",
+        "Accesso come dipendente",
+        "Editor dei pagamenti",
+        "Analista dei pagamenti"
+      ]
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "codice": "META_FB",
+      "profili": [
+        "Accesso completo alla Pagina",
+        "Accesso parziale alla Pagina",
+        "Amministratore (esperienza classica)",
+        "Editor (esperienza classica)",
+        "Moderatore (esperienza classica)",
+        "Inserzionista (esperienza classica)",
+        "Analista (esperienza classica)"
+      ]
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "codice": "META_IG",
+      "profili": [
+        "Accesso completo",
+        "Accesso parziale"
+      ]
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "codice": "META_ADS",
+      "profili": [
+        "Accesso come amministratore",
+        "Accesso standard",
+        "Inserzionista (esperienza classica)",
+        "Analista (esperienza classica)"
+      ]
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Dataset (Pixel)",
+      "codice": "META_DS",
+      "profili": [
+        "Gestione del dataset (amministratore)",
+        "Visualizzazione del dataset"
+      ]
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Catalogo prodotti",
+      "codice": "META_CAT",
+      "profili": [
+        "Amministratore del catalogo",
+        "Inserzionista del catalogo",
+        "Sola visualizzazione del catalogo"
+      ]
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "codice": "LI_PAGE",
+      "profili": [
+        "Super amministratore",
+        "Amministratore di contenuti",
+        "Curatore",
+        "Analista",
+        "Autore di contenuti sponsorizzati",
+        "Gestore dei moduli per l'acquisizione dei contatti",
+        "Pipeline builder"
+      ]
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "codice": "LI_ADS",
+      "profili": [
+        "Gestore account (Account manager)",
+        "Gestore campagne (Campaign manager)",
+        "Gestore creatività (Creative manager)",
+        "Visualizzatore (Viewer)",
+        "Amministratore fatturazione (Billing admin)"
+      ]
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Business Center",
+      "codice": "TT_BC",
+      "profili": [
+        "Amministratore (Admin)",
+        "Operatore (Operator)",
+        "Analista (Analyst)"
+      ]
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account TikTok",
+      "codice": "TT_ACC",
+      "profili": [
+        "Amministratore (Admin)",
+        "Operatore (Operator)",
+        "Analista (Analyst)"
+      ]
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account pubblicitario",
+      "codice": "TT_ADS",
+      "profili": [
+        "Amministratore (Admin)",
+        "Operatore (Operator)",
+        "Analista (Analyst)"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "codice": "GA4",
+      "profili": [
+        "Amministratore",
+        "Editor",
+        "Addetto al marketing",
+        "Analista",
+        "Visualizzatore"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "codice": "GADS",
+      "profili": [
+        "Accesso amministratore",
+        "Accesso standard",
+        "Sola lettura",
+        "Fatturazione",
+        "Accesso alle e-mail (solo e-mail)"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "codice": "GTM",
+      "profili": [
+        "Amministratore dell'account",
+        "Utente dell'account",
+        "Contenitore - Pubblicazione",
+        "Contenitore - Approvazione",
+        "Contenitore - Modifica",
+        "Contenitore - Lettura"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "codice": "GSC",
+      "profili": [
+        "Proprietario",
+        "Utente completo",
+        "Utente limitato"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "codice": "GBP",
+      "profili": [
+        "Proprietario principale",
+        "Proprietario",
+        "Gestore"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "codice": "GMC",
+      "profili": [
+        "Amministratore",
+        "Standard",
+        "Solo report (Reporting)",
+        "Solo e-mail"
+      ]
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "codice": "YT",
+      "profili": [
+        "Amministratore del canale",
+        "Editor",
+        "Editor (limitato)",
+        "Visualizzatore",
+        "Visualizzatore (limitato)"
+      ]
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "codice": "BREVO",
+      "profili": [
+        "Proprietario (Owner)",
+        "Manager (permessi completi)",
+        "Utente con permessi limitati (Restricted user)",
+        "Ruolo personalizzato"
+      ]
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "codice": "MAILCHIMP",
+      "profili": [
+        "Proprietario (Owner)",
+        "Amministratore (Admin)",
+        "Manager",
+        "Autore (Author)",
+        "Visualizzatore (Viewer)"
+      ]
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "codice": "SALESMANAGO",
+      "profili": [
+        "Administrator",
+        "Manager",
+        "Marketer",
+        "Salesman",
+        "Sender",
+        "Normal user"
+      ]
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "codice": "EMARSYS",
+      "profili": [
+        "Account Owner",
+        "Administrator",
+        "Operator",
+        "Restricted",
+        "BI Administrator"
+      ]
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "codice": "SALESFORCE",
+      "profili": [
+        "Amministratore di sistema (System Administrator)",
+        "Utente standard (Standard User)",
+        "Utente marketing (Marketing User)",
+        "Utente solo lettura (Read Only)",
+        "Set di autorizzazioni personalizzato"
+      ]
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "codice": "DYNAMICS",
+      "profili": [
+        "Amministratore di sistema (System Administrator)",
+        "Personalizzatore di sistema (System Customizer)",
+        "Responsabile vendite (Sales Manager)",
+        "Venditore (Salesperson)",
+        "Responsabile marketing (Marketing Manager)",
+        "Rappresentante servizio clienti (Customer Service Representative)"
+      ]
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "codice": "WORDPRESS",
+      "profili": [
+        "Amministratore",
+        "Editore",
+        "Autore",
+        "Collaboratore",
+        "Sottoscrittore"
+      ]
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "codice": "SHOPIFY",
+      "profili": [
+        "Proprietario del negozio",
+        "Membro dello staff con autorizzazioni complete",
+        "Membro dello staff con autorizzazioni limitate",
+        "Collaboratore (partner o agenzia)"
+      ]
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "codice": "LINKTREE",
+      "profili": [
+        "Proprietario dell'account",
+        "Amministratore invitato (Admin)",
+        "Manager del Workspace",
+        "Membro del Workspace"
+      ]
+    },
+    {
+      "piattaforma": "Interno",
+      "tipoAsset": "Archivio contenuti",
+      "codice": "ARCHIVIO",
+      "profili": [
+        "Accesso completo (proprietario)",
+        "Accesso in modifica",
+        "Sola lettura"
+      ]
+    }
+  ]
+}

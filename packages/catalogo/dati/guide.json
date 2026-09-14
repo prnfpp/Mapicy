@@ -1,0 +1,460 @@
+{
+  "avvertenza": "I percorsi nei menu dei fornitori cambiano senza preavviso. Le voci con \"verificato\": false sono ricostruite dalla documentazione pubblica e vanno confermate al primo uso: quando il percorso non corrisponde, correggere questo file invece del codice.",
+  "aggiornatoIl": "2026-09-14",
+  "guide": [
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID account aziendale",
+        "formato": "15-16 cifre",
+        "percorso": "business.facebook.com > Impostazioni aziendali > Informazioni sull'azienda: l'ID è sotto il nome dell'azienda.",
+        "esempio": "102938475610293"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Utenti > Persone. La colonna del ruolo distingue Accesso come amministratore da Accesso come dipendente.",
+        "note": "Meta non ha un export CSV nativo: selezionare l'elenco nella pagina e incollarlo in Mapicy, che lo interpreta. Controllare anche Utenti > Partner: i partner esterni hanno accessi che non compaiono nell'elenco delle persone."
+      }
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID Pagina",
+        "formato": "15-16 cifre",
+        "percorso": "Impostazioni aziendali > Account > Pagine: l'ID compare sotto il nome della Pagina. In alternativa, dalla Pagina stessa: Informazioni > ID Pagina.",
+        "esempio": "102938475610293"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Account > Pagine > selezionare la Pagina > riquadro Persone con accesso.",
+        "note": "Distinguere l'accesso tramite Business Manager da quello dell'esperienza classica della Pagina (ruoli Amministratore, Editor, Moderatore, Inserzionista, Analista): sono due elenchi diversi e vanno letti entrambi."
+      }
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome utente o ID account",
+        "formato": "nome utente senza @, oppure ID numerico",
+        "percorso": "Impostazioni aziendali > Account > Account Instagram.",
+        "esempio": "nomecliente"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Account > Account Instagram > selezionare l'account > Persone con accesso.",
+        "note": "L'accesso può arrivare anche dall'accoppiamento con la Pagina Facebook collegata: verificare chi ha accesso a quella Pagina."
+      }
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID account pubblicitario",
+        "formato": "15-16 cifre, a volte preceduto da act_",
+        "percorso": "Impostazioni aziendali > Account > Account pubblicitari; oppure nella barra dell'indirizzo di Gestione inserzioni come act_<ID>.",
+        "esempio": "act_102938475610293"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Account > Account pubblicitari > selezionare l'account > Persone con accesso.",
+        "note": "I profili Editor dei pagamenti e Analista dei pagamenti toccano dati finanziari: nel catalogo sono classificati a rischio alto o medio anche quando la persona non gestisce campagne."
+      }
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Dataset (Pixel)",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID dataset o pixel",
+        "formato": "15-16 cifre",
+        "percorso": "Impostazioni aziendali > Origini dati > Dataset (nelle versioni precedenti: Pixel).",
+        "esempio": "102938475610293"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Origini dati > Dataset > selezionare il dataset > Persone con accesso.",
+        "note": "È l'asset da guardare con più attenzione: il dataset riceve dati di navigazione e conversione dal sito del cliente, e la Conversions API può trasmettere dati di contatto. Verificare anche quali app e partner hanno accesso, non solo le persone."
+      }
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Catalogo prodotti",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID catalogo",
+        "formato": "15-16 cifre",
+        "percorso": "Impostazioni aziendali > Account > Cataloghi.",
+        "esempio": "102938475610293"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni aziendali > Account > Cataloghi > selezionare il catalogo > Persone con accesso.",
+        "note": "Se il catalogo è alimentato da un negozio Shopify o da un feed, censire anche quell'origine come asset a sé."
+      }
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID organizzazione",
+        "formato": "numerico, visibile nell'indirizzo della pagina di amministrazione",
+        "percorso": "Aprire la Pagina in modalità amministratore: l'indirizzo contiene /company/<ID>/admin/.",
+        "esempio": "12345678"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Pagina > Impostazioni > Gestisci amministratori. L'elenco è diviso per ruolo: Super amministratore, Amministratore di contenuti, Curatore, Analista, Autore di contenuti sponsorizzati, Gestore dei moduli per l'acquisizione dei contatti.",
+        "note": "Il Gestore dei moduli per l'acquisizione dei contatti vede i dati dei contatti raccolti dai Lead Gen Form: è un accesso a dati personali di terzi e va giustificato con una finalità precisa."
+      }
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID account pubblicitario",
+        "formato": "9 cifre",
+        "percorso": "Campaign Manager: l'ID compare accanto al nome dell'account nel selettore in alto.",
+        "esempio": "123456789"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Campaign Manager > Impostazioni account > Gestione utenti.",
+        "note": "LinkedIn non espone un export CSV degli utenti: copiare l'elenco dalla pagina."
+      }
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Business Center",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID Business Center",
+        "formato": "numerico lungo",
+        "percorso": "business.tiktok.com > Impostazioni del Business Center: l'ID è in cima alla pagina.",
+        "esempio": "7012345678901234567"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Business Center > Membri: elenco dei membri con ruolo (Amministratore, Operatore, Analista) e degli asset assegnati a ciascuno.",
+        "note": "Controllare anche la sezione dei partner: un'agenzia collegata come partner porta con sé i propri membri."
+      }
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account TikTok",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome utente",
+        "formato": "nome utente senza @",
+        "percorso": "Business Center > Asset > Account TikTok.",
+        "esempio": "nomecliente"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Business Center > Asset > Account TikTok > selezionare l'account > Membri con accesso.",
+        "note": "L'accesso al profilo può essere condiviso anche fuori dal Business Center, con le credenziali dell'account. Se succede, va censito come rischio a sé: è il caso in cui la mappatura degli accessi non basta e serve cambiare prassi."
+      }
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account pubblicitario",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID account pubblicitario",
+        "formato": "numerico lungo",
+        "percorso": "TikTok Ads Manager: l'ID compare accanto al nome dell'account nel selettore in alto.",
+        "esempio": "7012345678901234567"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Ads Manager > Impostazioni account > Gestione utenti; oppure dal Business Center, sull'asset corrispondente.",
+        "note": "Verificare separatamente chi ha accesso al pixel TikTok collegato: riceve i dati di navigazione del sito del cliente."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID proprietà",
+        "formato": "9 cifre",
+        "percorso": "Amministratore (ingranaggio in basso a sinistra) > Impostazioni proprietà: l'ID è in alto a destra.",
+        "esempio": "123456789"
+      },
+      "utenti": {
+        "esportazione": "csv",
+        "percorso": "Amministratore > Gestione degli accessi alla proprietà > pulsante di download in alto a destra.",
+        "note": "Il CSV contiene e-mail, ruoli e limitazioni sui dati. Le limitazioni contano: Nessun dato sui costi e Nessun dato sulle entrate riducono quello che la persona vede, e vanno annotate nelle note dell'accesso. Controllare anche gli accessi a livello di account, che si ereditano su tutte le proprietà."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "verificato": true,
+      "fonte": "Template Mappatura Privacy v4, foglio Estrazioni",
+      "identificativo": {
+        "nome": "ID cliente",
+        "formato": "10 cifre, formato 123-456-7890",
+        "percorso": "In alto a destra nell'interfaccia, accanto al nome dell'account.",
+        "esempio": "123-456-7890"
+      },
+      "utenti": {
+        "esportazione": "csv",
+        "percorso": "Amministratore > Accesso e sicurezza > scheda Utenti > icona di download.",
+        "note": "Se l'agenzia gestisce l'account da un account amministratore (MCC), controllare anche la scheda Gestori: l'accesso dell'MCC non compare fra gli utenti ma è un accesso a tutti gli effetti. Verificare inoltre chi ha accesso alle liste di Customer Match, che contengono dati di contatto caricati."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID contenitore",
+        "formato": "GTM- seguito da caratteri alfanumerici",
+        "percorso": "In alto a destra nello spazio di lavoro del contenitore.",
+        "esempio": "GTM-AB12CDE"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Amministratore > Gestione utenti, sia a livello di account che di contenitore.",
+        "note": "I permessi si sommano su due livelli: un utente con permessi di account li eredita su tutti i contenitori. Il permesso Pubblicazione è quello da guardare: consente di immettere codice sul sito del cliente, e quindi di raccogliere dati non previsti."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Proprietà",
+        "formato": "dominio o prefisso URL",
+        "percorso": "Nel selettore delle proprietà in alto a sinistra.",
+        "esempio": "sc-domain:esempio.it"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni > Utenti e autorizzazioni.",
+        "note": "Il proprietario verificato non può essere rimosso dalla gestione utenti: si toglie revocando il metodo di verifica (record DNS, file, tag). Se il proprietario verificato è un ex fornitore, è un problema da risolvere con il cliente, non da questo elenco."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome della sede o ID sede",
+        "formato": "testo, oppure ID numerico",
+        "percorso": "Gestione dei profili dell'attività: la sede compare nell'elenco.",
+        "esempio": "Cliente Srl — Sede di Modena"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Profilo dell'attività > Impostazioni del profilo > Persone e accesso.",
+        "note": "Chi ha accesso può rispondere alle recensioni e leggere i messaggi dei clienti finali: sono dati personali di terzi, non solo dati aziendali."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID Merchant Center",
+        "formato": "numerico",
+        "percorso": "In alto a destra nell'interfaccia.",
+        "esempio": "123456789"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni (ingranaggio) > Persone e accesso.",
+        "note": "Il profilo con accesso alle e-mail riceve le comunicazioni dell'account senza vedere i dati: è il profilo giusto per chi deve solo essere informato."
+      }
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID canale",
+        "formato": "UC seguito da 22 caratteri",
+        "percorso": "YouTube Studio > Impostazioni > Canale > Impostazioni avanzate.",
+        "esempio": "UCa1b2c3d4e5f6g7h8i9j0kl"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "YouTube Studio > Impostazioni > Autorizzazioni.",
+        "note": "Se il canale è collegato a un account del brand, gli accessi si gestiscono anche dalle impostazioni dell'account Google del brand e i due elenchi possono non coincidere: leggerli entrambi."
+      }
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome o ID account",
+        "formato": "testo",
+        "percorso": "Menu del profilo in alto a destra.",
+        "esempio": "Cliente Srl"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Menu del profilo > Utenti (o Impostazioni > I miei utenti): elenco degli utenti invitati con i permessi assegnati.",
+        "note": "Brevo contiene le liste dei contatti del cliente: qui l'accesso riguarda dati personali di terzi in volume, ed è il caso in cui la minimizzazione conta di più. Verificare chi può esportare i contatti."
+      }
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome account",
+        "formato": "testo",
+        "percorso": "Menu del profilo in alto a destra.",
+        "esempio": "Cliente Srl"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Menu del profilo > Account e fatturazione > Impostazioni > Utenti > Gestisci utenti.",
+        "note": "Il profilo Gestore non può modificare la fatturazione ma può esportare il pubblico: per la privacy è il permesso che conta, non quello amministrativo."
+      }
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID cliente SALESmanago",
+        "formato": "testo o numerico secondo il contratto",
+        "percorso": "Impostazioni > Informazioni sull'account.",
+        "esempio": "cliente-srl"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni > Utenti (gestione degli utenti dell'account).",
+        "note": "Piattaforma di marketing automation: profila i contatti del cliente e ne conserva lo storico dei comportamenti. Verificare il ruolo privacy del fornitore e l'elenco dei sub-responsabili prima di documentarlo."
+      }
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID account o nome dell'ambiente",
+        "formato": "testo",
+        "percorso": "Menu di amministrazione dell'account.",
+        "esempio": "cliente-srl-prod"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Amministrazione > Gestione utenti.",
+        "note": "Verificare quale data center è assegnato all'account: cambia la risposta alla domanda sul trasferimento extra-UE, e va annotato sull'asset."
+      }
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "verificato": false,
+      "identificativo": {
+        "nome": "ID organizzazione",
+        "formato": "15 o 18 caratteri, inizia per 00D",
+        "percorso": "Imposta > Informazioni sulla società > ID organizzazione.",
+        "esempio": "00D000000000000"
+      },
+      "utenti": {
+        "esportazione": "csv",
+        "percorso": "Imposta > Utenti > Utenti. L'elenco si esporta creando un report sull'oggetto Utente.",
+        "note": "Su Salesforce il profilo autorizzativo da solo non dice cosa vede una persona: contano anche i set di autorizzazioni e le regole di condivisione. Per la mappatura annotare il profilo e, nelle note, i set di autorizzazioni assegnati."
+      }
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome o URL dell'ambiente",
+        "formato": "nome dell'organizzazione o indirizzo crm",
+        "percorso": "Centro di amministrazione Power Platform > Ambienti.",
+        "esempio": "cliente-srl.crm4.dynamics.com"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Centro di amministrazione Power Platform > Ambienti > selezionare l'ambiente > Utenti; i ruoli di sicurezza si vedono sul singolo utente.",
+        "note": "L'assegnazione delle licenze avviene nel centro di amministrazione Microsoft 365, che è un elenco diverso: un utente con licenza ma senza ruolo di sicurezza non accede ai dati. Per la mappatura conta il ruolo di sicurezza."
+      }
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Indirizzo del sito",
+        "formato": "dominio",
+        "percorso": "Bacheca > Impostazioni > Generali.",
+        "esempio": "esempio.it"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Bacheca > Utenti > Tutti gli utenti: l'elenco mostra il ruolo (Amministratore, Editore, Autore, Collaboratore, Sottoscrittore).",
+        "note": "Due accessi non compaiono in questo elenco e vanno censiti a parte: l'accesso al pannello dell'hosting e quello FTP o SSH, che permettono di leggere il database del sito. Censire anche i plugin che raccolgono o trasmettono dati personali (moduli di contatto, statistiche, chat): ognuno può introdurre un responsabile o un titolare autonomo."
+      }
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Dominio del negozio",
+        "formato": "nome.myshopify.com",
+        "percorso": "Impostazioni > Dettagli negozio.",
+        "esempio": "cliente-srl.myshopify.com"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni > Utenti e autorizzazioni.",
+        "note": "Il negozio contiene i dati di clienti e ordini: è l'asset con i dati personali più sensibili fra quelli gestiti di solito da un'agenzia. Guardare i permessi Clienti ed Esporta clienti più del ruolo complessivo, e censire anche le app installate che accedono ai dati dei clienti."
+      }
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Nome utente",
+        "formato": "nome utente del profilo pubblico",
+        "percorso": "Indirizzo pubblico del profilo: linktr.ee/<nome utente>.",
+        "esempio": "nomecliente"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Impostazioni account > Team, disponibile solo sui piani che prevedono la collaborazione.",
+        "note": "Sui piani senza gestione del team l'accesso è condiviso con le credenziali dell'account. In quel caso non c'è un elenco da estrarre: censire una riga per ogni persona che conosce le credenziali e trattarla come rischio alto, perché la revoca richiede di cambiare la password."
+      }
+    },
+    {
+      "piattaforma": "Interno",
+      "tipoAsset": "Archivio contenuti",
+      "verificato": false,
+      "identificativo": {
+        "nome": "Percorso o nome della cartella condivisa",
+        "formato": "testo",
+        "percorso": "Da compilare con il servizio effettivamente usato dall'agenzia (Google Drive, SharePoint, Dropbox, NAS interno).",
+        "esempio": "Drive condiviso — Clienti/Rossi"
+      },
+      "utenti": {
+        "esportazione": "copia",
+        "percorso": "Pannello di amministrazione del servizio usato: gli accessi alla cartella condivisa e i link di condivisione attivi.",
+        "note": "I link di condivisione contano come accessi e sono i più facili da dimenticare: un link \"chiunque abbia il link\" su una cartella con materiali del cliente è un accesso non tracciato. Verificarli a ogni campagna."
+      }
+    }
+  ]
+}

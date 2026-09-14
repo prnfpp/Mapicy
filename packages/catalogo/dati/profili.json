@@ -1,0 +1,974 @@
+{
+  "aggiornatoIl": "2026-09-08",
+  "fonte": "Template_Mappatura_Privacy_v4.xlsx, foglio Legenda",
+  "profili": [
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "profilo": "Accesso come amministratore",
+      "datiTrattati": "Dati anagrafici, di contatto e ruoli di tutte le persone e dei partner collegati; dati aziendali, fiscali e di fatturazione; domini verificati; log di sicurezza; tutti i dati degli asset collegati.",
+      "attivita": "Gestione persone e partner\nInvitare, rimuovere e modificare i ruoli di collaboratori interni e partner esterni su tutti gli asset.\n\nGestione asset\nCreare, aggiungere, rivendicare, condividere o rimuovere Pagine, account pubblicitari, dataset, cataloghi e domini.\n\nImpostazioni aziendali e sicurezza\nModificare informazioni aziendali e dati di fatturazione, gestire la verifica dell'attività e i requisiti di autenticazione a due fattori, eliminare l'account aziendale.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "profilo": "Accesso come dipendente",
+      "datiTrattati": "Dati anagrafici e di contatto delle persone presenti nelle impostazioni aziendali; elenco degli asset e dei partner; dati degli asset effettivamente assegnati.",
+      "attivita": "Operatività sugli asset assegnati\nLavorare esclusivamente sugli account e sugli strumenti assegnati, nei limiti del profilo ricevuto su ciascuno di essi.\n\nConsultazione\nVisualizzare le informazioni presenti nelle impostazioni aziendali senza poterle modificare.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "profilo": "Editor dei pagamenti",
+      "datiTrattati": "Dati finanziari e fiscali aziendali: transazioni, fatture, spesa degli account, metodi di pagamento e dati della carta aziendale.",
+      "attivita": "Gestione dei pagamenti\nAggiungere, modificare e rimuovere metodi di pagamento e dati di fatturazione dell'account aziendale.\n\nConsultazione finanziaria\nVisualizzare transazioni, fatture e spesa di tutti gli account pubblicitari collegati.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "profilo": "Analista dei pagamenti",
+      "datiTrattati": "Dati finanziari e fiscali aziendali in sola lettura: transazioni, fatture, spesa degli account, metodi di pagamento.",
+      "attivita": "Consultazione finanziaria\nVisualizzare transazioni, fatture, spesa degli account e metodi di pagamento, senza possibilità di modifica.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Accesso completo alla Pagina",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi privati, commenti e recensioni, metriche di interazione e dati demografici aggregati; ruoli e permessi degli altri utenti.",
+      "attivita": "Tutte le attività dell'accesso parziale\nContenuti, messaggi, moderazione della community e insight.\n\nGestione utenti e accessi\nAssegnare, modificare o revocare l'accesso di altre persone e partner alla Pagina.\n\nImpostazioni e asset collegati\nModificare le informazioni pubbliche della Pagina, collegare o scollegare asset (Instagram, WhatsApp Business), eliminare definitivamente la Pagina.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Accesso parziale alla Pagina",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi privati, commenti e recensioni, metriche di interazione e dati demografici aggregati.",
+      "attivita": "Contenuti\nCreare, pubblicare, gestire ed eliminare post, storie e materiali multimediali.\n\nMessaggi e community\nLeggere e rispondere a messaggi privati (Messenger), commenti e recensioni; moderare i contenuti degli utenti.\n\nInserzioni e insight\nCreare inserzioni per la Pagina e consultare le metriche di copertura, interazione e pubblico, in base alle singole attività abilitate.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Amministratore (esperienza classica)",
+      "datiTrattati": "Come l'accesso completo: dati del pubblico, messaggi, commenti, recensioni, metriche e ruoli degli utenti.",
+      "attivita": "Controllo totale della Pagina\nGestire ruoli, impostazioni, contenuti, messaggi, inserzioni e insight; eliminare la Pagina.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Editor (esperienza classica)",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, messaggi, commenti, recensioni e metriche.",
+      "attivita": "Contenuti e community\nPubblicare e modificare contenuti a nome della Pagina, rispondere a messaggi e commenti, creare inserzioni e consultare gli insight. Non può gestire i ruoli.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Moderatore (esperienza classica)",
+      "datiTrattati": "Contenuti dei messaggi privati, commenti e recensioni degli utenti; metriche di interazione.",
+      "attivita": "Moderazione\nRispondere ai messaggi e ai commenti, rimuovere contenuti e segnalare utenti; creare inserzioni e consultare gli insight. Non può pubblicare come Pagina.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Inserzionista (esperienza classica)",
+      "datiTrattati": "Dati di navigazione e interazione del pubblico, segmenti di pubblico e metriche pubblicitarie.",
+      "attivita": "Inserzioni\nCreare e gestire inserzioni per conto della Pagina e consultare le relative metriche di rendimento.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "profilo": "Analista (esperienza classica)",
+      "datiTrattati": "Metriche di interazione e dati demografici aggregati del pubblico; elenco delle persone che gestiscono la Pagina.",
+      "attivita": "Sola consultazione\nVisualizzare insight e statistiche della Pagina e vedere chi ha pubblicato i contenuti.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "profilo": "Accesso completo",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi diretti, commenti, metriche di interazione e dati demografici aggregati; ruoli e permessi degli altri utenti.",
+      "attivita": "Tutte le attività dell'accesso parziale\nContenuti, messaggi diretti, moderazione e insight.\n\nInserzioni e creator\nCreare, gestire ed eliminare inserzioni, gestire le partnership pubblicitarie e i permessi sui contenuti dei creator.\n\nGestione utenti e impostazioni\nAssegnare o revocare i permessi ad altri collaboratori e partner, collegare o scollegare Pagina e account aziendale, modificare le informazioni pubbliche del profilo.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "profilo": "Accesso parziale",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi diretti, commenti, metriche di interazione e dati demografici aggregati.",
+      "attivita": "Contenuti\nCreare, gestire o eliminare post, storie e reel.\n\nMessaggi e community\nInviare e rispondere ai messaggi diretti, moderare e rispondere ai commenti, rimuovere contenuti indesiderati.\n\nInsight\nVisualizzare le prestazioni dell'account e dei contenuti, in base alle singole attività abilitate.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Accesso come amministratore",
+      "datiTrattati": "Dati di navigazione e interazione degli utenti, segmenti di pubblico e liste clienti caricate, dati di conversione; dati finanziari, fiscali e metodi di pagamento; ruoli degli utenti.",
+      "attivita": "Tutte le attività dell'accesso standard\nGestione delle campagne, dei pubblici e della reportistica.\n\nImpostazioni e accessi\nAssegnare, modificare o revocare i ruoli degli altri utenti e gestire le impostazioni dell'account.\n\nFatturazione e pagamenti\nAggiungere e modificare metodi di pagamento, dati fiscali e limiti di spesa, visualizzare le fatture.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Accesso standard",
+      "datiTrattati": "Dati di navigazione e interazione degli utenti, segmenti di pubblico e liste clienti caricate, dati di conversione, metriche di rendimento.",
+      "attivita": "Inserzioni\nCreare, gestire, ottimizzare e mettere in pausa campagne, gruppi di inserzioni e creatività.\n\nPubblici e targeting\nCreare e utilizzare segmenti di pubblico (dati del dataset, retargeting, liste clienti).\n\nReportistica\nVisualizzare, analizzare e scaricare i report sulle prestazioni delle campagne.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Inserzionista (esperienza classica)",
+      "datiTrattati": "Dati di navigazione e interazione degli utenti, segmenti di pubblico, metriche di rendimento; metodo di pagamento associato al proprio profilo.",
+      "attivita": "Inserzioni\nCreare e gestire inserzioni utilizzando il metodo di pagamento associato all'account, senza accesso alle impostazioni generali.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Analista (esperienza classica)",
+      "datiTrattati": "Metriche di rendimento aggregate delle campagne, senza accesso ai dati di pagamento.",
+      "attivita": "Sola consultazione\nVisualizzare le prestazioni delle campagne e scaricare i report.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Dataset (Pixel)",
+      "profilo": "Gestione del dataset (amministratore)",
+      "datiTrattati": "Dati di navigazione, cookie e identificatori, indirizzo IP, eventi web e app, conversioni; dati anagrafici e di contatto cifrati (hash) inviati tramite Conversions API.",
+      "attivita": "Tutte le attività di visualizzazione\nAnalisi degli eventi e utilizzo del dataset nelle campagne.\n\nConfigurazione tecnica\nConfigurare, modificare o eliminare eventi, conversioni personalizzate e integrazioni server-side (Conversions API), gestire le chiavi di accesso.\n\nCondivisione e accessi\nAssegnare o revocare permessi e condividere il dataset con altri account aziendali o partner.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Dataset (Pixel)",
+      "profilo": "Visualizzazione del dataset",
+      "datiTrattati": "Dati di navigazione, cookie e identificatori, indirizzo IP, eventi web e app, conversioni.",
+      "attivita": "Analisi eventi\nVisualizzare il traffico, i log e gli eventi ricevuti dal dataset.\n\nUtilizzo pubblicitario\nAssociare il dataset agli account pubblicitari per tracciamento, ottimizzazione e creazione di pubblici.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Catalogo prodotti",
+      "profilo": "Amministratore del catalogo",
+      "datiTrattati": "Dati di prodotto e di inventario, eventi di acquisto e conversione collegati, dati di navigazione degli utenti associati agli eventi del catalogo.",
+      "attivita": "Gestione completa\nCreare, modificare ed eliminare cataloghi, set di prodotti e feed; collegare dataset e account pubblicitari.\n\nGestione accessi\nAssegnare o revocare permessi ad altri utenti e partner sul catalogo.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Catalogo prodotti",
+      "profilo": "Inserzionista del catalogo",
+      "datiTrattati": "Dati di prodotto, eventi di acquisto e conversione, segmenti di pubblico generati dal catalogo.",
+      "attivita": "Utilizzo pubblicitario\nUtilizzare il catalogo e i set di prodotti nelle campagne (advantage+ cataloghi, retargeting dinamico) senza modificarne la configurazione.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Catalogo prodotti",
+      "profilo": "Sola visualizzazione del catalogo",
+      "datiTrattati": "Dati di prodotto e metriche aggregate del catalogo.",
+      "attivita": "Sola consultazione\nVisualizzare prodotti, set e diagnostica del catalogo senza possibilità di modifica.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Super amministratore",
+      "datiTrattati": "Dati professionali e anagrafici di follower e visitatori, contenuti dei messaggi e dei commenti, statistiche aggregate; informazioni aziendali e ruoli degli amministratori.",
+      "attivita": "Tutte le attività sui contenuti\nPubblicazione, interazione con gli utenti e analisi.\n\nGestione amministratori\nAggiungere, modificare e rimuovere tutti i ruoli di amministrazione della Pagina.\n\nImpostazioni della Pagina\nModificare le informazioni pubbliche e le schede personalizzate, disattivare la Pagina.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Amministratore di contenuti",
+      "datiTrattati": "Dati professionali e anagrafici di follower e visitatori, contenuti dei messaggi e dei commenti ricevuti dalla Pagina, statistiche aggregate.",
+      "attivita": "Contenuti\nCreare, pubblicare, modificare ed eliminare post, articoli, eventi e documenti.\n\nCommunity\nModerare e rispondere a commenti, menzioni e messaggi ricevuti dalla Pagina.\n\nAnalisi\nVisualizzare ed esportare le metriche di copertura e i dati demografici professionali aggregati.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Curatore",
+      "datiTrattati": "Statistiche aggregate della Pagina e dati relativi ai contenuti consigliati ai dipendenti.",
+      "attivita": "Contenuti consigliati\nCreare e gestire i contenuti suggeriti ai dipendenti nella scheda dedicata.\n\nAnalisi\nVisualizzare ed esportare le analisi della Pagina.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Analista",
+      "datiTrattati": "Statistiche aggregate di Pagina, follower, visitatori e contenuti; dati demografici professionali aggregati.",
+      "attivita": "Sola analisi\nVisualizzare ed esportare le analisi della Pagina. Accesso limitato agli strumenti di terze parti, nessun accesso a contenuti e impostazioni.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Autore di contenuti sponsorizzati",
+      "datiTrattati": "Dati di rendimento delle campagne e metriche dei contenuti sponsorizzati.",
+      "attivita": "Contenuti sponsorizzati\nCreare annunci con contenuti sponsorizzati per conto dell'organizzazione o sponsorizzare post organici tramite l'account pubblicitario.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Gestore dei moduli per l'acquisizione dei contatti",
+      "datiTrattati": "Dati personali e professionali dei contatti raccolti tramite i moduli Lead Gen: nome, cognome, e-mail, telefono, azienda, ruolo.",
+      "attivita": "Gestione dei lead\nCreare e gestire i moduli per l'acquisizione dei contatti, scaricare ed esportare i dati personali raccolti dalle campagne.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "profilo": "Pipeline builder",
+      "datiTrattati": "Dati professionali dei membri associati alle attività di sviluppo commerciale sulla Pagina.",
+      "attivita": "Attività di pipeline\nGestire le funzionalità di sviluppo contatti collegate alla Pagina tramite Gestione campagne.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Gestore account (Account manager)",
+      "datiTrattati": "Dati demografici professionali, dati di navigazione dell'Insight Tag, conversioni, contatti Lead Gen; dati finanziari, fiscali e ruoli degli utenti.",
+      "attivita": "Tutte le attività di campagna\nGestire inserzioni, pubblici, reportistica ed estrazione dei contatti.\n\nGestione accessi\nAssegnare, modificare o revocare i ruoli degli altri utenti dell'account.\n\nImpostazioni e fatturazione\nModificare i dettagli dell'account, gestire metodi di pagamento e centro di fatturazione.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Gestore campagne (Campaign manager)",
+      "datiTrattati": "Dati demografici professionali, dati di navigazione dell'Insight Tag, conversioni e contatti raccolti tramite Lead Gen Form.",
+      "attivita": "Campagne\nCreare, modificare, ottimizzare e interrompere campagne e creatività.\n\nPubblici e reportistica\nCreare e utilizzare segmenti di pubblico, generare report e scaricare i dati dei contatti.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Gestore creatività (Creative manager)",
+      "datiTrattati": "Metriche di rendimento delle creatività e dati aggregati di campagna.",
+      "attivita": "Creatività\nCreare e modificare le creatività delle campagne senza poter modificare budget, targeting o impostazioni dell'account.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Visualizzatore (Viewer)",
+      "datiTrattati": "Metriche di rendimento aggregate delle campagne.",
+      "attivita": "Sola consultazione\nVisualizzare campagne e report senza possibilità di modifica.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Amministratore fatturazione (Billing admin)",
+      "datiTrattati": "Dati finanziari e fiscali dell'account: metodi di pagamento, fatture, spesa.",
+      "attivita": "Fatturazione\nGestire il centro di fatturazione, i metodi di pagamento e scaricare le fatture.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Business Center",
+      "profilo": "Amministratore (Admin)",
+      "datiTrattati": "Dati anagrafici, di contatto e ruoli dei membri e dei partner; elenco e dati di tutti gli asset collegati; dati finanziari e fiscali.",
+      "attivita": "Gestione membri e partner\nInvitare, rimuovere e modificare i ruoli dei membri interni e dei partner esterni.\n\nGestione asset\nAggiungere, condividere e rimuovere account pubblicitari, account TikTok, pixel e cataloghi.\n\nImpostazioni e finanza\nModificare le informazioni aziendali, gestire i metodi di pagamento e la fatturazione.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Business Center",
+      "profilo": "Operatore (Operator)",
+      "datiTrattati": "Dati degli asset assegnati: metriche pubblicitarie, conversioni, segmenti di pubblico; dati di contatto dei membri del Business Center.",
+      "attivita": "Operatività sugli asset assegnati\nOperare su account pubblicitari e altri asset assegnati nei limiti del ruolo ricevuto, senza gestire membri o impostazioni aziendali.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Business Center",
+      "profilo": "Analista (Analyst)",
+      "datiTrattati": "Metriche aggregate degli asset assegnati: visualizzazioni, eventi, rendimento delle campagne.",
+      "attivita": "Sola consultazione\nVisualizzare e scaricare report e metriche degli asset assegnati.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account TikTok",
+      "profilo": "Amministratore (Admin)",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi diretti, commenti, metriche di interazione e dati demografici aggregati; ruoli degli utenti.",
+      "attivita": "Contenuti e community\nPubblicare, modificare ed eliminare video; moderare e rispondere a commenti e messaggi.\n\nGestione accessi e impostazioni\nAssegnare o revocare i permessi degli altri utenti sull'account e modificarne le impostazioni.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account TikTok",
+      "profilo": "Operatore (Operator)",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico, contenuti dei messaggi diretti, commenti, metriche di interazione.",
+      "attivita": "Contenuti e community\nPubblicare e gestire video, rispondere a commenti e messaggi, senza poter modificare accessi e impostazioni dell'account.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account TikTok",
+      "profilo": "Analista (Analyst)",
+      "datiTrattati": "Metriche di visualizzazione e interazione aggregate, dati demografici aggregati del pubblico.",
+      "attivita": "Sola consultazione\nVisualizzare e scaricare le statistiche dell'account e dei contenuti.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Amministratore (Admin)",
+      "datiTrattati": "Dati di navigazione, eventi del pixel, conversioni, segmenti di pubblico e liste clienti caricate; dati finanziari, fiscali e ruoli degli utenti.",
+      "attivita": "Tutte le attività dell'operatore\nGestione di campagne, pubblici e reportistica.\n\nGestione accessi\nAssegnare, modificare o revocare i ruoli degli altri utenti sull'account pubblicitario.\n\nImpostazioni e fatturazione\nModificare le informazioni dell'account, gestire metodi di pagamento e fatturazione.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Operatore (Operator)",
+      "datiTrattati": "Dati di navigazione, eventi del pixel, conversioni, segmenti di pubblico e liste clienti caricate.",
+      "attivita": "Campagne\nCreare, gestire, ottimizzare e mettere in pausa campagne e creatività video.\n\nPubblici e targeting\nCreare e utilizzare segmenti di pubblico (pixel, liste clienti, retargeting).",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "TikTok",
+      "tipoAsset": "Account pubblicitario",
+      "profilo": "Analista (Analyst)",
+      "datiTrattati": "Metriche pubblicitarie aggregate: visualizzazioni, eventi, rendimento delle campagne.",
+      "attivita": "Sola consultazione\nVisualizzare, analizzare e scaricare i report sulle prestazioni delle campagne.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "profilo": "Amministratore",
+      "datiTrattati": "Dati di navigazione, eventi, conversioni, identificatori utente e dispositivo, indirizzi IP (troncati), dati e-commerce; indirizzi e-mail e ruoli degli utenti della proprietà.",
+      "attivita": "Tutte le attività dell'editor\nControllo completo su configurazione e dati.\n\nGestione accessi e account\nAssegnare, modificare o revocare i ruoli degli utenti, consultare la cronologia delle modifiche, eliminare la proprietà o l'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "profilo": "Editor",
+      "datiTrattati": "Dati di navigazione, eventi, conversioni, identificatori utente e dispositivo, dati e-commerce.",
+      "attivita": "Tutte le attività dell'addetto al marketing\nGestione di report, conversioni e pubblici.\n\nConfigurazione tecnica\nConfigurare flussi di dati, dimensioni e metriche personalizzate, collegare prodotti esterni (Google Ads, BigQuery), inviare richieste di eliminazione dati.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "profilo": "Addetto al marketing",
+      "datiTrattati": "Dati di navigazione, eventi, conversioni, identificatori utente e dispositivo, dati e-commerce.",
+      "attivita": "Tutte le attività dell'analista\nEsplorazioni e consultazione dei dati.\n\nConversioni e pubblici\nCreare, modificare ed eliminare eventi chiave e segmenti di pubblico utilizzabili per il remarketing.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "profilo": "Analista",
+      "datiTrattati": "Dati di navigazione, eventi, conversioni e metriche aggregate.",
+      "attivita": "Tutte le attività del visualizzatore\nConsultazione di report e dati.\n\nAnalisi avanzata\nCreare, modificare e condividere esplorazioni personalizzate.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "profilo": "Visualizzatore",
+      "datiTrattati": "Dati di navigazione, eventi, conversioni e metriche aggregate.",
+      "attivita": "Sola consultazione\nVisualizzare report e dashboard senza poter modificare configurazioni, esplorazioni o metriche.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "profilo": "Accesso amministratore",
+      "datiTrattati": "Dati di navigazione e conversione degli utenti, liste di remarketing e segmenti di pubblico, dati dei clienti caricati per Customer Match (in forma cifrata), dati di fatturazione; indirizzi e-mail e ruoli degli utenti.",
+      "attivita": "Tutte le attività dell'accesso standard\nGestione di campagne, conversioni e fatturazione.\n\nGestione utenti\nInvitare, modificare e rimuovere utenti e collegamenti con account amministratore (MCC), modificarne i livelli di accesso.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "profilo": "Accesso standard",
+      "datiTrattati": "Dati di navigazione e conversione degli utenti, liste di remarketing e segmenti di pubblico, dati caricati per Customer Match, dati di fatturazione.",
+      "attivita": "Campagne\nCreare, modificare, ottimizzare e sospendere campagne, gruppi di annunci, annunci e budget.\n\nMisurazione e pubblici\nConfigurare le azioni di conversione e i tag, creare e utilizzare segmenti di pubblico.\n\nFatturazione\nVisualizzare e modificare i dati di fatturazione, senza poter gestire gli utenti.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "profilo": "Sola lettura",
+      "datiTrattati": "Dati di navigazione e conversione, metriche di rendimento e dati di fatturazione in sola lettura.",
+      "attivita": "Sola consultazione\nSfogliare l'account, le campagne e i report senza poter apportare modifiche.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "profilo": "Fatturazione",
+      "datiTrattati": "Dati finanziari e fiscali dell'account: metodi di pagamento, fatture, transazioni.",
+      "attivita": "Fatturazione\nVisualizzare e modificare le informazioni di fatturazione e pagamento dell'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "profilo": "Accesso alle e-mail (solo e-mail)",
+      "datiTrattati": "Indirizzo e-mail dell'utente e contenuto delle notifiche relative all'account.",
+      "attivita": "Solo notifiche\nRicevere le e-mail di notifica relative all'account, senza alcun accesso all'interfaccia.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Amministratore dell'account",
+      "datiTrattati": "Configurazioni di tracciamento e dati inviati ai tag (eventi, identificatori, dati e-commerce, dati di contatto cifrati); indirizzi e-mail e ruoli degli utenti.",
+      "attivita": "Gestione dell'account\nCreare contenitori, gestire le impostazioni dell'account e assegnare o revocare i permessi degli utenti su account e contenitori.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Utente dell'account",
+      "datiTrattati": "Elenco dei contenitori dell'account e configurazioni dei contenitori assegnati.",
+      "attivita": "Consultazione dell'account\nVisualizzare le impostazioni dell'account e operare sui contenitori in base al permesso ricevuto su ciascuno.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Contenitore - Pubblicazione",
+      "datiTrattati": "Configurazioni di tracciamento e tutti i dati inviati ai tag verso destinazioni proprie e di terze parti.",
+      "attivita": "Pubblicazione\nCreare, modificare, approvare e pubblicare versioni del contenitore, rendendo attivi in produzione tag, trigger e variabili.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Contenitore - Approvazione",
+      "datiTrattati": "Configurazioni di tracciamento e dati inviati ai tag in ambiente di anteprima.",
+      "attivita": "Approvazione\nCreare e approvare versioni del contenitore senza poterle pubblicare in produzione.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Contenitore - Modifica",
+      "datiTrattati": "Configurazioni di tracciamento e dati inviati ai tag in ambiente di anteprima.",
+      "attivita": "Modifica\nCreare e modificare tag, trigger e variabili in bozza, senza poter approvare o pubblicare.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "profilo": "Contenitore - Lettura",
+      "datiTrattati": "Configurazioni di tracciamento del contenitore in sola lettura.",
+      "attivita": "Sola consultazione\nVisualizzare tag, trigger e variabili senza poterli modificare.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "profilo": "Proprietario",
+      "datiTrattati": "Dati aggregati di ricerca (query, clic, impressioni, posizione), dati tecnici del sito, messaggi e segnalazioni di sicurezza; indirizzi e-mail degli utenti della proprietà.",
+      "attivita": "Controllo completo\nGestire utenti e proprietari, configurare le impostazioni, rimuovere URL, gestire le associazioni con altri prodotti Google ed eliminare la proprietà.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "profilo": "Utente completo",
+      "datiTrattati": "Dati aggregati di ricerca, dati tecnici del sito, messaggi e segnalazioni.",
+      "attivita": "Operatività\nVisualizzare tutti i dati, richiedere la scansione degli URL e utilizzare la maggior parte degli strumenti, senza poter gestire gli utenti.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "profilo": "Utente limitato",
+      "datiTrattati": "Dati aggregati di ricerca e stato tecnico del sito, in sola lettura.",
+      "attivita": "Sola consultazione\nVisualizzare la maggior parte dei dati senza poter avviare azioni sugli strumenti.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "profilo": "Proprietario principale",
+      "datiTrattati": "Dati identificativi e di contatto dell'attività, recensioni e risposte, messaggi dei clienti, metriche di interazione e ricerca locale; ruoli degli utenti.",
+      "attivita": "Controllo totale\nGestire tutte le informazioni e i contenuti, aggiungere e rimuovere proprietari e gestori, trasferire la proprietà ed eliminare il profilo.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "profilo": "Proprietario",
+      "datiTrattati": "Dati identificativi e di contatto dell'attività, recensioni e risposte, messaggi dei clienti, metriche di interazione; ruoli degli utenti.",
+      "attivita": "Gestione completa\nModificare informazioni e contenuti, rispondere a recensioni e messaggi, aggiungere e rimuovere gestori.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "profilo": "Gestore",
+      "datiTrattati": "Dati identificativi e di contatto dell'attività, recensioni e risposte, messaggi dei clienti, metriche di interazione.",
+      "attivita": "Gestione operativa\nModificare le informazioni dell'attività, pubblicare post e foto, rispondere a recensioni e messaggi. Non può gestire gli utenti né eliminare il profilo.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "profilo": "Amministratore",
+      "datiTrattati": "Dati di prodotto e inventario, dati di conversione e transazione collegati, dati di contatto dell'azienda; indirizzi e-mail e ruoli degli utenti.",
+      "attivita": "Gestione completa\nGestire feed, prodotti, impostazioni di spedizione e imposte, collegamenti con Google Ads e Analytics; aggiungere e rimuovere utenti.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "profilo": "Standard",
+      "datiTrattati": "Dati di prodotto e inventario, dati di conversione e transazione collegati.",
+      "attivita": "Operatività\nGestire feed e prodotti e consultare la diagnostica, senza poter gestire gli utenti.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "profilo": "Solo report (Reporting)",
+      "datiTrattati": "Metriche aggregate di rendimento dei prodotti e dei feed.",
+      "attivita": "Sola consultazione\nAccedere ai report sul rendimento dei prodotti senza poter modificare i dati.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "profilo": "Solo e-mail",
+      "datiTrattati": "Indirizzo e-mail dell'utente e contenuto delle notifiche relative all'account.",
+      "attivita": "Solo notifiche\nRicevere le comunicazioni relative all'account senza accesso all'interfaccia.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "profilo": "Amministratore del canale",
+      "datiTrattati": "Dati anagrafici e di contatto del pubblico che interagisce, commenti, metriche di visualizzazione e dati demografici aggregati; dati di monetizzazione; ruoli degli utenti.",
+      "attivita": "Controllo completo\nGestire contenuti, commenti, monetizzazione, impostazioni del canale e permessi degli altri utenti.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "profilo": "Editor",
+      "datiTrattati": "Commenti e interazioni del pubblico, metriche di visualizzazione e dati demografici aggregati; dati di monetizzazione in visualizzazione.",
+      "attivita": "Gestione dei contenuti\nCaricare, modificare, pubblicare ed eliminare video, gestire playlist e commenti, consultare le statistiche. Non può gestire i permessi.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "profilo": "Editor (limitato)",
+      "datiTrattati": "Commenti e interazioni del pubblico, metriche di visualizzazione aggregate, senza dati di ricavo.",
+      "attivita": "Gestione dei contenuti senza dati economici\nCome l'editor, ma senza accesso ai dati di ricavo e monetizzazione.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "profilo": "Visualizzatore",
+      "datiTrattati": "Metriche di visualizzazione e dati demografici aggregati; dati di ricavo in sola lettura.",
+      "attivita": "Sola consultazione\nVisualizzare i dati del canale, comprese le informazioni sui ricavi, senza poter modificare nulla.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "profilo": "Visualizzatore (limitato)",
+      "datiTrattati": "Metriche di visualizzazione e dati demografici aggregati, senza dati di ricavo.",
+      "attivita": "Sola consultazione senza dati economici\nVisualizzare i dati del canale esclusi ricavi e monetizzazione.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "profilo": "Proprietario (Owner)",
+      "datiTrattati": "Anagrafica completa dei contatti (nome, e-mail, telefono, attributi personalizzati), consensi e cronologia di iscrizione, comportamenti di apertura e clic, dati di acquisto se integrati; dati di fatturazione e utenti dell'account.",
+      "attivita": "Controllo totale\nGestire piano, fatturazione e utenti; accedere a tutte le funzionalità e a tutti i dati dei contatti; eliminare l'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "profilo": "Manager (permessi completi)",
+      "datiTrattati": "Anagrafica completa dei contatti, consensi, comportamenti di apertura e clic, dati transazionali.",
+      "attivita": "Gestione operativa completa\nGestire contatti, liste, campagne, automazioni, mittenti e domini; invitare altri utenti se abilitato. Non è il proprietario dell'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "profilo": "Utente con permessi limitati (Restricted user)",
+      "datiTrattati": "Solo i dati delle aree effettivamente abilitate: contatti, campagne o statistiche, secondo i permessi concessi.",
+      "attivita": "Operatività limitata\nAccedere unicamente alle funzionalità abilitate dal proprietario (es. creazione campagne senza esportazione contatti).",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Brevo",
+      "tipoAsset": "Account Brevo",
+      "profilo": "Ruolo personalizzato",
+      "datiTrattati": "Dipende dai permessi assegnati al ruolo: indicare nelle note quali aree includono dati personali dei contatti.",
+      "attivita": "Permessi predefiniti dal ruolo\nInsieme di permessi definito dall'organizzazione e assegnato a più utenti. Documentare nella colonna Note l'elenco dei permessi attivi.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "profilo": "Proprietario (Owner)",
+      "datiTrattati": "Anagrafica completa dei contatti e consensi, cronologia di apertura, clic e acquisto, dati e-commerce se integrati; dati di fatturazione e utenti.",
+      "attivita": "Controllo totale\nGestire fatturazione, utenti, integrazioni e tutti i dati del pubblico; chiudere l'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "profilo": "Amministratore (Admin)",
+      "datiTrattati": "Anagrafica completa dei contatti e consensi, cronologia di interazione e acquisto, dati di fatturazione.",
+      "attivita": "Gestione completa\nAccedere a tutte le funzionalità, gestire utenti, integrazioni e fatturazione, senza la titolarità dell'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "profilo": "Manager",
+      "datiTrattati": "Anagrafica dei contatti, consensi, cronologia di interazione; nessun accesso ai dati di fatturazione.",
+      "attivita": "Gestione operativa\nCreare e inviare campagne, gestire pubblico, automazioni e report; nessun accesso a fatturazione e gestione utenti.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "profilo": "Autore (Author)",
+      "datiTrattati": "Contenuti delle campagne e metriche aggregate; accesso limitato ai dati del pubblico.",
+      "attivita": "Creazione contenuti\nCreare e modificare campagne e contenuti, senza poterle inviare né gestire il pubblico.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Mailchimp",
+      "tipoAsset": "Account Mailchimp",
+      "profilo": "Visualizzatore (Viewer)",
+      "datiTrattati": "Metriche aggregate delle campagne.",
+      "attivita": "Sola consultazione\nVisualizzare campagne e report senza poter modificare o inviare.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Administrator",
+      "datiTrattati": "Anagrafica completa dei contatti, consensi e cronologia dei consensi, comportamenti di navigazione e acquisto, tag e punteggi, dati transazionali; utenti e impostazioni di sistema.",
+      "attivita": "Controllo totale\nAccedere a tutte le funzioni del sistema, creare e gestire utenti, configurare le impostazioni per tutti gli utenti, gestire le integrazioni e le API.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Manager",
+      "datiTrattati": "Anagrafica completa dei contatti e relative statistiche, dati di campagna e di comportamento dell'intera base dati.",
+      "attivita": "Gestione completa dei dati\nAccesso a tutti i contatti del database e alle statistiche di tutte le campagne inviate, senza le funzioni amministrative di sistema.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Marketer",
+      "datiTrattati": "Anagrafica dei contatti assegnati, comportamenti e consensi, dati di campagna.",
+      "attivita": "Attività di marketing\nAccesso alla maggior parte delle funzionalità del sistema con accesso limitato alle funzioni amministrative.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Salesman",
+      "datiTrattati": "Anagrafica dei contatti assegnati e relativa cronologia di interazione commerciale.",
+      "attivita": "Attività commerciali\nAccesso alle funzioni CRM e alle analisi di base sui contatti assegnati.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Sender",
+      "datiTrattati": "Nessun accesso diretto alle schede o alle liste contatti; solo dati aggregati degli invii.",
+      "attivita": "Solo invii\nInviare comunicazioni massive verso destinatari indicati da altri utenti, senza poter consultare le schede contatto o le liste.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "SALESmanago",
+      "tipoAsset": "Account SALESmanago",
+      "profilo": "Normal user",
+      "datiTrattati": "Anagrafica dei contatti assegnati e dati di campagna, secondo i permessi concessi.",
+      "attivita": "Operatività standard\nAccesso alla maggior parte delle funzionalità con accesso limitato alle funzioni amministrative.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "profilo": "Account Owner",
+      "datiTrattati": "Anagrafica completa dei contatti e dei consensi, dati comportamentali e di acquisto, segmenti; utenti, ruoli, impostazioni di sicurezza, credenziali API e WebDAV.",
+      "attivita": "Super amministrazione\nGestire utenti, ruoli, impostazioni di sicurezza, single sign-on, restrizioni IP e credenziali API. È l'unico ruolo con accesso a User Management e Security Settings.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "profilo": "Administrator",
+      "datiTrattati": "Anagrafica completa dei contatti e dei consensi, dati comportamentali e di acquisto, segmenti e campagne.",
+      "attivita": "Accesso completo alle funzionalità\nAccesso a tutte le funzioni della piattaforma a esclusione di quelle riservate all'Account Owner e di Smart Insight.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "profilo": "Operator",
+      "datiTrattati": "Anagrafica dei contatti, dati comportamentali, segmenti e dati di campagna.",
+      "attivita": "Attività quotidiane di marketing\nGestire campagne e-mail, segmenti e programmi di automazione.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "profilo": "Restricted",
+      "datiTrattati": "Accesso minimo ai dati, limitato alle funzionalità abilitate per l'onboarding.",
+      "attivita": "Accesso minimo\nRuolo di onboarding con accesso ridotto a funzionalità e prodotti.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Emarsys",
+      "tipoAsset": "Account SAP Emarsys",
+      "profilo": "BI Administrator",
+      "datiTrattati": "Dati analitici e di acquisto aggregati e a livello di contatto disponibili in Smart Insight.",
+      "attivita": "Business intelligence\nAccesso alle funzionalità di Smart Insight per analisi e reportistica avanzata.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "profilo": "Amministratore di sistema (System Administrator)",
+      "datiTrattati": "Tutti i dati dell'organizzazione: anagrafiche di lead, contatti e clienti, comunicazioni, opportunità e dati economici; utenti, ruoli, profili e log di audit.",
+      "attivita": "Controllo totale\nConfigurare l'organizzazione, gestire utenti, profili, ruoli e set di autorizzazioni, accedere e modificare tutti i dati, esportare e importare dati, gestire le integrazioni.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "profilo": "Utente standard (Standard User)",
+      "datiTrattati": "Anagrafiche di lead, contatti, clienti e opportunità visibili in base al ruolo e alle regole di condivisione.",
+      "attivita": "Operatività commerciale\nCreare, modificare ed eliminare i record di propria competenza, eseguire report standard.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "profilo": "Utente marketing (Marketing User)",
+      "datiTrattati": "Anagrafiche di lead e contatti, consensi, dati di campagna e di risposta alle campagne.",
+      "attivita": "Attività di marketing\nGestire campagne, importare lead, utilizzare gli strumenti di gestione delle campagne oltre alle autorizzazioni dell'utente standard.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "profilo": "Utente solo lettura (Read Only)",
+      "datiTrattati": "Anagrafiche e record visibili in base al ruolo e alle regole di condivisione, in sola lettura.",
+      "attivita": "Sola consultazione\nVisualizzare record e report senza poter creare o modificare dati.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Salesforce",
+      "tipoAsset": "Organizzazione Salesforce",
+      "profilo": "Set di autorizzazioni personalizzato",
+      "datiTrattati": "Dipende dagli oggetti e dai campi inclusi: documentare nelle note gli oggetti con dati personali accessibili.",
+      "attivita": "Permessi aggiuntivi\nAutorizzazioni assegnate in aggiunta al profilo. Documentare nella colonna Note quali oggetti e campi rende accessibili.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Amministratore di sistema (System Administrator)",
+      "datiTrattati": "Tutti i dati dell'ambiente: anagrafiche di lead, contatti e clienti, comunicazioni, opportunità e dati economici; utenti, ruoli di sicurezza e log di audit.",
+      "attivita": "Controllo totale\nConfigurare l'ambiente, gestire utenti e ruoli di sicurezza, accedere e modificare tutti i record, gestire integrazioni ed esportazioni.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Personalizzatore di sistema (System Customizer)",
+      "datiTrattati": "Struttura dei dati e record dell'ambiente secondo i privilegi assegnati.",
+      "attivita": "Personalizzazione\nModificare entità, campi, moduli e processi dell'ambiente senza le funzioni di amministrazione degli utenti.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Responsabile vendite (Sales Manager)",
+      "datiTrattati": "Anagrafiche di lead, contatti, clienti e opportunità del proprio team, con dati economici e previsionali.",
+      "attivita": "Gestione del team\nVisualizzare e modificare i record dell'intera unità organizzativa, assegnare record e gestire le previsioni.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Venditore (Salesperson)",
+      "datiTrattati": "Anagrafiche di lead, contatti, clienti e opportunità di propria competenza.",
+      "attivita": "Operatività commerciale\nCreare e gestire i propri record commerciali e le relative attività.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Responsabile marketing (Marketing Manager)",
+      "datiTrattati": "Anagrafiche di lead e contatti, consensi, dati di campagna e di risposta.",
+      "attivita": "Gestione marketing\nGestire campagne, elenchi di marketing e segmentazioni a livello di unità organizzativa.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Microsoft Dynamics 365",
+      "tipoAsset": "Ambiente Dynamics 365",
+      "profilo": "Rappresentante servizio clienti (Customer Service Representative)",
+      "datiTrattati": "Anagrafiche di contatti e clienti, casi di assistenza e relative comunicazioni.",
+      "attivita": "Assistenza clienti\nGestire i casi di assistenza e le comunicazioni con i clienti di propria competenza.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "profilo": "Amministratore",
+      "datiTrattati": "Dati degli utenti registrati (e-mail, nome, indirizzo IP), commenti, contenuti dei moduli di contatto, log del sito e, se presente e-commerce, dati di ordine e pagamento.",
+      "attivita": "Controllo totale del sito\nGestire utenti e ruoli, installare e configurare temi e plugin, accedere al database tramite gli strumenti del pannello, esportare i dati del sito.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "profilo": "Editore",
+      "datiTrattati": "Contenuti pubblicati, commenti degli utenti e relativi dati (nome, e-mail, IP).",
+      "attivita": "Gestione editoriale\nPubblicare, modificare ed eliminare qualsiasi contenuto, moderare i commenti; nessun accesso a utenti, temi e plugin.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "profilo": "Autore",
+      "datiTrattati": "Contenuti di propria produzione e relativi allegati.",
+      "attivita": "Pubblicazione dei propri contenuti\nCreare, pubblicare e modificare esclusivamente i propri articoli.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "profilo": "Collaboratore",
+      "datiTrattati": "Contenuti di propria produzione in bozza.",
+      "attivita": "Redazione\nScrivere e modificare i propri articoli senza poterli pubblicare.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "profilo": "Sottoscrittore",
+      "datiTrattati": "Dati del proprio profilo utente.",
+      "attivita": "Solo profilo\nGestire il proprio profilo e accedere ai contenuti riservati agli utenti registrati.",
+      "rischio": "basso"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "profilo": "Proprietario del negozio",
+      "datiTrattati": "Anagrafiche dei clienti (nome, e-mail, telefono, indirizzi), ordini e dati di spedizione, dati di pagamento in forma parziale, consensi marketing; dati finanziari e utenti del negozio.",
+      "attivita": "Controllo totale\nGestire personale e permessi, fatturazione e piano, app e canali di vendita, esportare dati clienti e ordini, chiudere il negozio.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "profilo": "Membro dello staff con autorizzazioni complete",
+      "datiTrattati": "Anagrafiche dei clienti, ordini, dati di spedizione, consensi marketing, report finanziari.",
+      "attivita": "Gestione completa del negozio\nGestire prodotti, ordini, clienti, sconti, app e report, senza la titolarità dell'account.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "profilo": "Membro dello staff con autorizzazioni limitate",
+      "datiTrattati": "Solo i dati delle aree abilitate: ad esempio ordini e clienti, oppure solo prodotti.",
+      "attivita": "Operatività limitata\nAccedere unicamente alle sezioni abilitate dal proprietario. Documentare nelle note quali permessi sono attivi.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "profilo": "Collaboratore (partner o agenzia)",
+      "datiTrattati": "Solo i dati delle sezioni per cui è stato richiesto e concesso l'accesso.",
+      "attivita": "Accesso da account partner\nOperare sul negozio tramite account partner con permessi concessi puntualmente dal proprietario; l'accesso non consuma un posto staff.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "profilo": "Proprietario dell'account",
+      "datiTrattati": "Dati di contatto raccolti tramite i moduli (e-mail, telefono), dati di navigazione e clic dei visitatori, dati di fatturazione dell'abbonamento.",
+      "attivita": "Controllo totale\nGestire link, aspetto, integrazioni, analytics e fatturazione, invitare o rimuovere amministratori, eliminare il profilo.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "profilo": "Amministratore invitato (Admin)",
+      "datiTrattati": "Dati di contatto raccolti tramite i moduli, dati di navigazione e clic dei visitatori, dati di fatturazione.",
+      "attivita": "Accesso completo al profilo\nGestire link, aspetto, analytics e fatturazione del profilo per conto del proprietario.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "profilo": "Manager del Workspace",
+      "datiTrattati": "Dati di navigazione e clic aggregati di tutti i profili dello spazio di lavoro; dati di contatto raccolti dai moduli dei profili gestiti.",
+      "attivita": "Gestione dello spazio di lavoro\nVisualizzare tutti i profili dello spazio, aggiungerli o rimuoverli, invitare membri e assegnare i ruoli, gestire gli accessi amministrativi.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Linktree",
+      "tipoAsset": "Profilo Linktree",
+      "profilo": "Membro del Workspace",
+      "datiTrattati": "Dati dei soli profili assegnati all'interno dello spazio di lavoro.",
+      "attivita": "Operatività limitata\nOperare esclusivamente sui profili assegnati nello spazio di lavoro.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Interno",
+      "tipoAsset": "Archivio contenuti",
+      "profilo": "Accesso completo (proprietario)",
+      "datiTrattati": "Immagini e video di persone identificabili, dati anagrafici e di contatto, corrispondenza e-mail, preventivi, consuntivi e dati di fatturazione.",
+      "attivita": "Gestione dell'archivio\nCaricare, organizzare, modificare, condividere ed eliminare definitivamente foto, video e documenti.\n\nGestione accessi\nConcedere o revocare l'accesso alle cartelle e generare o disattivare link di condivisione esterni.",
+      "rischio": "alto"
+    },
+    {
+      "piattaforma": "Interno",
+      "tipoAsset": "Archivio contenuti",
+      "profilo": "Accesso in modifica",
+      "datiTrattati": "Immagini e video di persone identificabili, dati anagrafici e di contatto, corrispondenza e-mail, preventivi e consuntivi.",
+      "attivita": "Gestione dei contenuti\nCaricare, modificare e organizzare contenuti nelle cartelle assegnate, senza poter modificare i permessi di accesso.",
+      "rischio": "medio"
+    },
+    {
+      "piattaforma": "Interno",
+      "tipoAsset": "Archivio contenuti",
+      "profilo": "Sola lettura",
+      "datiTrattati": "Immagini e video di persone identificabili, dati anagrafici e di contatto.",
+      "attivita": "Consultazione\nVisualizzare e scaricare i contenuti delle cartelle assegnate, senza modifica, condivisione o cancellazione.",
+      "rischio": "basso"
+    }
+  ]
+}
