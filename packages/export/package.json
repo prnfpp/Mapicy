@@ -1,0 +1,13 @@
+{
+  "name": "@mapicy/export",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@mapicy/catalogo": "0.1.0",
+    "@mapicy/core": "0.1.0",
+    "exceljs": "^4.4.0"
+  }
+}

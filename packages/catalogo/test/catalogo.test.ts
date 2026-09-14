@@ -34,6 +34,13 @@ describe('integrità del catalogo', () => {
     expect(c.filter((x) => x.gravita === 'bloccante').map((x) => x.codice)).toEqual(['C01', 'C02'])
   })
 
+  it('non parla più di fogli e legende: la terminologia dell’Excel non esiste in questo applicativo', () => {
+    for (const c of controlli()) {
+      expect(`${c.codice} ${c.titolo}`).not.toMatch(/Legenda|foglio/i)
+      expect(`${c.codice} ${c.comeCorreggere}`).not.toMatch(/Legenda|foglio/i)
+    }
+  })
+
   it('ha una guida di reperimento per ogni tipo di asset', () => {
     for (const t of tipiAsset()) {
       const g = guidaPer(t.piattaforma, t.tipoAsset)

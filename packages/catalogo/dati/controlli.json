@@ -56,21 +56,21 @@
     },
     {
       "codice": "C10",
-      "titolo": "Profili non presenti in Legenda",
+      "titolo": "Profili non presenti nel catalogo",
       "gravita": "media",
-      "comeCorreggere": "La combinazione piattaforma / tipo asset / profilo non esiste in Legenda: correggere la riga o aggiungere il profilo in Legenda."
+      "comeCorreggere": "La combinazione piattaforma / tipo asset / profilo non esiste nel catalogo: correggere il profilo dell'accesso, oppure aggiungerlo al catalogo se la piattaforma l'ha introdotto."
     },
     {
       "codice": "C11",
       "titolo": "Persone non presenti in anagrafica",
       "gravita": "media",
-      "comeCorreggere": "Aggiungere la persona nel foglio Legenda-dipendenti."
+      "comeCorreggere": "Aggiungere la persona in Persone, oppure correggere l'accesso collegandolo alla persona giusta."
     },
     {
       "codice": "C12",
       "titolo": "Codici asset del registro non presenti in anagrafica asset",
       "gravita": "media",
-      "comeCorreggere": "Aggiungere l'asset nel foglio Asset o correggere il codice nel Registro."
+      "comeCorreggere": "Aggiungere l'asset in Asset, oppure correggere il codice asset sull'accesso."
     },
     {
       "codice": "C13",
