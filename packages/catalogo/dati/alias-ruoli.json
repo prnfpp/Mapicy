@@ -1,0 +1,551 @@
+{
+  "nota": "Come le piattaforme scrivono i ruoli negli elenchi esportati, di solito in inglese, ricondotto ai nomi del catalogo. Serve all'import: senza, ogni riga di un CSV in inglese andrebbe riconosciuta a mano.",
+  "alias": [
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Administrator",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Admin",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/admin",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/analytics.admin",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Marketer",
+      "profilo": "Addetto al marketing"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/analytics.marketer",
+      "profilo": "Addetto al marketing"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Analyst",
+      "profilo": "Analista"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/analytics.analyst",
+      "profilo": "Analista"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Viewer",
+      "profilo": "Visualizzatore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/analytics.viewer",
+      "profilo": "Visualizzatore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "Read & Analyze",
+      "profilo": "Visualizzatore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/editor",
+      "profilo": "Editor"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Google Analytics 4",
+      "alias": "predefinedRoles/analytics.editor",
+      "profilo": "Editor"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Admin",
+      "profilo": "Accesso amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Administrative",
+      "profilo": "Accesso amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Administrative access",
+      "profilo": "Accesso amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Amministratore",
+      "profilo": "Accesso amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Standard",
+      "profilo": "Accesso standard"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Standard access",
+      "profilo": "Accesso standard"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Read only",
+      "profilo": "Sola lettura"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Read-only",
+      "profilo": "Sola lettura"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Read only access",
+      "profilo": "Sola lettura"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Billing",
+      "profilo": "Fatturazione"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Billing access",
+      "profilo": "Fatturazione"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Email only",
+      "profilo": "Accesso alle e-mail (solo e-mail)"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Google Ads",
+      "alias": "Email only access",
+      "profilo": "Accesso alle e-mail (solo e-mail)"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Account Administrator",
+      "profilo": "Amministratore dell'account"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Account Admin",
+      "profilo": "Amministratore dell'account"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Account User",
+      "profilo": "Utente dell'account"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Publish",
+      "profilo": "Contenitore - Pubblicazione"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Approve",
+      "profilo": "Contenitore - Approvazione"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Edit",
+      "profilo": "Contenitore - Modifica"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Contenitore Tag Manager",
+      "alias": "Read",
+      "profilo": "Contenitore - Lettura"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Owner",
+      "profilo": "Proprietario"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Verified owner",
+      "profilo": "Proprietario"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Full",
+      "profilo": "Utente completo"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Full user",
+      "profilo": "Utente completo"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Restricted",
+      "profilo": "Utente limitato"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Proprietà Search Console",
+      "alias": "Restricted user",
+      "profilo": "Utente limitato"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "alias": "Primary owner",
+      "profilo": "Proprietario principale"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "alias": "Owner",
+      "profilo": "Proprietario"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Profilo dell'attività",
+      "alias": "Manager",
+      "profilo": "Gestore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Admin",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Administrator",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Standard",
+      "profilo": "Standard"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Reporting",
+      "profilo": "Solo report (Reporting)"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Reporting only",
+      "profilo": "Solo report (Reporting)"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Account Merchant Center",
+      "alias": "Email only",
+      "profilo": "Solo e-mail"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "alias": "Manager",
+      "profilo": "Amministratore del canale"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "alias": "Editor (limited)",
+      "profilo": "Editor (limitato)"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "alias": "Viewer",
+      "profilo": "Visualizzatore"
+    },
+    {
+      "piattaforma": "Google",
+      "tipoAsset": "Canale YouTube",
+      "alias": "Viewer (limited)",
+      "profilo": "Visualizzatore (limitato)"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "alias": "Administrator",
+      "profilo": "Amministratore"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "alias": "Editor",
+      "profilo": "Editore"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "alias": "Author",
+      "profilo": "Autore"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "alias": "Contributor",
+      "profilo": "Collaboratore"
+    },
+    {
+      "piattaforma": "WordPress",
+      "tipoAsset": "Sito WordPress",
+      "alias": "Subscriber",
+      "profilo": "Sottoscrittore"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "alias": "Store owner",
+      "profilo": "Proprietario del negozio"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "alias": "Staff",
+      "profilo": "Membro dello staff con autorizzazioni complete"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "alias": "Staff with full permissions",
+      "profilo": "Membro dello staff con autorizzazioni complete"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "alias": "Staff with limited permissions",
+      "profilo": "Membro dello staff con autorizzazioni limitate"
+    },
+    {
+      "piattaforma": "Shopify",
+      "tipoAsset": "Negozio Shopify",
+      "alias": "Collaborator",
+      "profilo": "Collaboratore (partner o agenzia)"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Super admin",
+      "profilo": "Super amministratore"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Super administrator",
+      "profilo": "Super amministratore"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Content admin",
+      "profilo": "Amministratore di contenuti"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Curator",
+      "profilo": "Curatore"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Analyst",
+      "profilo": "Analista"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Sponsored content poster",
+      "profilo": "Autore di contenuti sponsorizzati"
+    },
+    {
+      "piattaforma": "LinkedIn",
+      "tipoAsset": "Pagina",
+      "alias": "Lead gen forms manager",
+      "profilo": "Gestore dei moduli per l'acquisizione dei contatti"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Admin access",
+      "profilo": "Accesso come amministratore"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Admin",
+      "profilo": "Accesso come amministratore"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Employee access",
+      "profilo": "Accesso come dipendente"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Employee",
+      "profilo": "Accesso come dipendente"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Finance editor",
+      "profilo": "Editor dei pagamenti"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Business Manager",
+      "alias": "Finance analyst",
+      "profilo": "Analista dei pagamenti"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Full control",
+      "profilo": "Accesso completo alla Pagina"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Facebook access: full control",
+      "profilo": "Accesso completo alla Pagina"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Partial access",
+      "profilo": "Accesso parziale alla Pagina"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Facebook access: partial access",
+      "profilo": "Accesso parziale alla Pagina"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Admin",
+      "profilo": "Amministratore (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Editor",
+      "profilo": "Editor (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Moderator",
+      "profilo": "Moderatore (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Advertiser",
+      "profilo": "Inserzionista (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Pagina Facebook",
+      "alias": "Analyst",
+      "profilo": "Analista (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "alias": "Full control",
+      "profilo": "Accesso completo"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account Instagram",
+      "alias": "Partial access",
+      "profilo": "Accesso parziale"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "alias": "Admin access",
+      "profilo": "Accesso come amministratore"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "alias": "Admin",
+      "profilo": "Accesso come amministratore"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "alias": "Standard access",
+      "profilo": "Accesso standard"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "alias": "Advertiser",
+      "profilo": "Inserzionista (esperienza classica)"
+    },
+    {
+      "piattaforma": "Meta",
+      "tipoAsset": "Account pubblicitario",
+      "alias": "Analyst",
+      "profilo": "Analista (esperienza classica)"
+    }
+  ]
+}

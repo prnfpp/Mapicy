@@ -4,13 +4,16 @@ import datiTipiAsset from '../dati/tipi-asset.json'
 import datiElenchi from '../dati/elenchi.json'
 import datiControlli from '../dati/controlli.json'
 import datiGuide from '../dati/guide.json'
+import datiAlias from '../dati/alias-ruoli.json'
 import {
+  fileAlias,
   fileControlli,
   fileElenchi,
   fileFornitori,
   fileGuide,
   fileProfili,
   fileTipiAsset,
+  type AliasRuolo,
   type DefinizioneControllo,
   type Elenchi,
   type FornitoreCatalogo,
@@ -48,6 +51,7 @@ const tipiAssetValidati = leggi(fileTipiAsset, datiTipiAsset, 'tipi-asset.json')
 const elenchiValidati = leggi(fileElenchi, datiElenchi, 'elenchi.json')
 const controlliValidati = leggi(fileControlli, datiControlli, 'controlli.json')
 const guideValidate = leggi(fileGuide, datiGuide, 'guide.json')
+const aliasValidati = leggi(fileAlias, datiAlias, 'alias-ruoli.json')
 
 /**
  * Normalizzazione usata per confrontare nomi che arrivano da fonti diverse:
@@ -83,6 +87,9 @@ const indiceGuide = new Map<string, GuidaAsset>(
 )
 const indiceControlli = new Map<string, DefinizioneControllo>(
   controlliValidati.controlli.map((c) => [c.codice, c]),
+)
+const indiceAlias = new Map<string, AliasRuolo>(
+  aliasValidati.alias.map((a) => [chiaveTerna(a.piattaforma, a.tipoAsset, a.alias), a]),
 )
 
 export const elenchi: Elenchi = elenchiValidati
@@ -159,12 +166,23 @@ export function mappaRuoloDichiarato(
   // Alcune piattaforme riportano il ruolo in inglese fra parentesi accanto
   // all'italiano, per esempio «Visualizzatore (Viewer)». Se il testo
   // dichiarato coincide con una delle due parti, vale.
-  return (
-    candidati.find((p) => {
-      const parti = p.profilo.split(/[()]/).map((x) => normalizza(x)).filter(Boolean)
-      return parti.includes(n)
-    }) ?? null
-  )
+  const daParentesi = candidati.find((p) => {
+    const parti = p.profilo.split(/[()]/).map((x) => normalizza(x)).filter(Boolean)
+    return parti.includes(n)
+  })
+  if (daParentesi) return daParentesi
+
+  // Ultima carta: la tabella degli alias, cioè come la piattaforma scrive il
+  // ruolo nell'elenco esportato. Sta nei dati e non qui perché è la parte che
+  // cambia quando un fornitore rinomina un permesso.
+  const alias = indiceAlias.get(chiaveTerna(piattaforma, tipoAsset, ruoloDichiarato))
+  return alias ? (trovaProfilo(piattaforma, tipoAsset, alias.profilo) ?? null) : null
+}
+
+/** Gli alias noti per un tipo di asset, per mostrarli nella guida all'import. */
+export function aliasPer(piattaforma: string, tipoAsset: string): AliasRuolo[] {
+  const k = chiaveCoppia(piattaforma, tipoAsset)
+  return aliasValidati.alias.filter((a) => chiaveCoppia(a.piattaforma, a.tipoAsset) === k)
 }
 
 /**
@@ -189,6 +207,13 @@ export function verificaIntegrita(): string[] {
   for (const p of profiliValidati.profili) {
     if (!tipoAssetPer(p.piattaforma, p.tipoAsset)) {
       problemi.push(`Il profilo "${p.profilo}" usa il tipo asset ${p.piattaforma} / ${p.tipoAsset}, che non è dichiarato in tipi-asset.json`)
+    }
+  }
+  for (const a of aliasValidati.alias) {
+    if (!trovaProfilo(a.piattaforma, a.tipoAsset, a.profilo)) {
+      problemi.push(
+        `L'alias "${a.alias}" di ${a.piattaforma} / ${a.tipoAsset} punta al profilo "${a.profilo}", che non esiste in profili.json`,
+      )
     }
   }
   const viste = new Set<string>()

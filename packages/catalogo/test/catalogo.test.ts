@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  aliasPer,
   controlli,
   elenchi,
   fornitorePer,
@@ -98,6 +99,33 @@ describe('riconoscimento del ruolo dichiarato dalla piattaforma', () => {
   it('si arrende invece di assegnare il profilo più somigliante', () => {
     expect(mappaRuoloDichiarato('Meta', 'Pagina Facebook', 'Accesso completissimo')).toBeNull()
     expect(mappaRuoloDichiarato('Meta', 'Pagina Facebook', '')).toBeNull()
+  })
+})
+
+describe('alias dei ruoli dichiarati dalle piattaforme', () => {
+  it('riconduce i nomi inglesi ai profili del catalogo', () => {
+    expect(mappaRuoloDichiarato('WordPress', 'Sito WordPress', 'Editor')?.profilo).toBe('Editore')
+    expect(mappaRuoloDichiarato('Google', 'Account Google Ads', 'Read only')?.profilo).toBe('Sola lettura')
+    expect(mappaRuoloDichiarato('Meta', 'Pagina Facebook', 'Full control')?.profilo).toBe('Accesso completo alla Pagina')
+    expect(mappaRuoloDichiarato('Shopify', 'Negozio Shopify', 'Collaborator')?.profilo).toBe('Collaboratore (partner o agenzia)')
+  })
+
+  it('riconosce i nomi tecnici che GA4 mette nei CSV', () => {
+    expect(mappaRuoloDichiarato('Google', 'Proprietà Google Analytics 4', 'predefinedRoles/analytics.admin')?.profilo).toBe('Amministratore')
+    expect(mappaRuoloDichiarato('Google', 'Proprietà Google Analytics 4', 'Marketer')?.profilo).toBe('Addetto al marketing')
+  })
+
+  it('tiene gli alias distinti per tipo di asset, perché lo stesso nome vale cose diverse', () => {
+    // «Editor» su una Pagina Facebook è il ruolo dell'esperienza classica; su
+    // un sito WordPress è l'Editore. Lo stesso testo, due profili.
+    expect(mappaRuoloDichiarato('Meta', 'Pagina Facebook', 'Editor')?.profilo).toBe('Editor (esperienza classica)')
+    expect(mappaRuoloDichiarato('WordPress', 'Sito WordPress', 'Editor')?.profilo).toBe('Editore')
+  })
+
+  it('espone gli alias noti di un tipo di asset per mostrarli nella guida', () => {
+    const alias = aliasPer('WordPress', 'Sito WordPress')
+    expect(alias.length).toBe(5)
+    expect(alias.map((a) => a.alias)).toContain('Subscriber')
   })
 })
 

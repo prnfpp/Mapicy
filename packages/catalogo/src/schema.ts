@@ -109,3 +109,15 @@ export const fileGuide = z.object({
   aggiornatoIl: z.string(),
   guide: z.array(guidaAsset).min(1),
 })
+
+export const aliasRuolo = z.object({
+  piattaforma: z.string().min(1),
+  tipoAsset: z.string().min(1),
+  /** Come la piattaforma scrive il ruolo nell'elenco esportato. */
+  alias: z.string().min(1),
+  /** Il profilo del catalogo a cui corrisponde. */
+  profilo: z.string().min(1),
+})
+export type AliasRuolo = z.infer<typeof aliasRuolo>
+
+export const fileAlias = z.object({ nota: z.string(), alias: z.array(aliasRuolo).min(1) })
