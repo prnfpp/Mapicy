@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"],
+    "paths": {
+      "@mapicy/catalogo": ["./packages/catalogo/src/index.ts"],
+      "@mapicy/core": ["./packages/core/src/index.ts"],
+      "@mapicy/export": ["./packages/export/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "packages/*/test", "apps/*/src"]
+}

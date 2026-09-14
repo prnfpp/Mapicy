@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-electron/
+rilasci/
+*.tsbuildinfo
+.DS_Store
+.vite/
+coverage/
+
+# Archivi locali della mappatura: contengono dati personali, non vanno in git.
+*.mapicy.json
+archivio-locale/
