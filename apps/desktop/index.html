@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      La politica di sicurezza dei contenuti è restrittiva di proposito:
+      nell'applicativo si incollano elenchi copiati dalle piattaforme, e questa
+      riga è quello che impedisce a un testo incollato di diventare codice.
+      Nessuna connessione verso l'esterno: l'applicativo è locale.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'"
+    />
+    <title>Mapicy — Mappatura degli accessi</title>
+  </head>
+  <body>
+    <div id="radice"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

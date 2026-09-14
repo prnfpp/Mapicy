@@ -14,7 +14,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "dev": "npm run dev -w @mapicy/desktop",
     "build": "npm run build -w @mapicy/desktop",
-    "impacchetta": "npm run impacchetta -w @mapicy/desktop"
+    "impacchetta": "npm run impacchetta -w @mapicy/desktop",
+    "verifica:ui": "npm run verifica:ui -w @mapicy/desktop"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

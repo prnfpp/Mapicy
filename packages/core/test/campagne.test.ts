@@ -225,6 +225,13 @@ describe('cruscotto', () => {
     expect(sintesi(cruscotto(d, OGGI), 180)).toMatch(/da risolvere subito/)
   })
 
+  it('la sintesi nomina le anomalie non bloccanti invece di parlare solo delle verifiche', () => {
+    const d = documentoSano()
+    d.accessi[0].mfaAttiva = 'no'
+    const testo = sintesi(cruscotto(d, OGGI), 180)
+    expect(testo).toMatch(/Nessun problema bloccante, ma 1 controllo è da correggere/)
+  })
+
   it('la sintesi non dichiara «tutto a posto» quando mancano le estrazioni', () => {
     const d = documentoSano()
     d.estrazioni = []

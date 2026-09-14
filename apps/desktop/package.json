@@ -1,0 +1,60 @@
+{
+  "name": "@mapicy/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Applicativo desktop Mapicy: mappatura degli accessi e dei trattamenti.",
+  "main": "dist-electron/principale.cjs",
+  "scripts": {
+    "dev": "vite",
+    "dev:app": "npm run compila:electron && electron .",
+    "compila:electron": "node costruisci-electron.mjs",
+    "build": "vite build && npm run compila:electron",
+    "impacchetta": "npm run build && electron-builder",
+    "verifica:ui": "node verifica-ui.mjs"
+  },
+  "dependencies": {
+    "@mapicy/catalogo": "0.1.0",
+    "@mapicy/core": "0.1.0",
+    "@mapicy/export": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "esbuild": "^0.24.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11",
+    "playwright": "^1.49.0"
+  },
+  "build": {
+    "appId": "it.mapicy.app",
+    "productName": "Mapicy",
+    "directories": {
+      "output": "rilasci"
+    },
+    "files": [
+      "dist/**",
+      "dist-electron/**"
+    ],
+    "mac": {
+      "category": "public.app-category.business",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office"
+    }
+  }
+}

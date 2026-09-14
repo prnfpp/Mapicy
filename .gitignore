@@ -10,3 +10,4 @@ coverage/
 # Archivi locali della mappatura: contengono dati personali, non vanno in git.
 *.mapicy.json
 archivio-locale/
+scatti/

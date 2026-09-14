@@ -91,6 +91,13 @@ export function sintesi(c: Cruscotto, soglia: number): string {
   if (c.controlliNonVerificabili > 0) {
     return `Nessun problema bloccante, ma ${c.controlliNonVerificabili} controlli non si possono valutare: mancano estrazioni recenti per ${c.assetSenzaEstrazione.length} asset.`
   }
+  if (c.anomalieAperte > 0) {
+    const coda =
+      c.avanzamento.daVerificare > 0
+        ? ` Restano anche ${c.avanzamento.daVerificare} accessi da verificare in questa campagna.`
+        : ''
+    return `Nessun problema bloccante, ma ${c.anomalieAperte} ${c.anomalieAperte === 1 ? 'controllo è' : 'controlli sono'} da correggere.${coda}`
+  }
   if (c.avanzamento.daVerificare > 0) {
     return `Restano ${c.avanzamento.daVerificare} accessi da verificare in questa campagna. La soglia di validità di una verifica è ${soglia} giorni.`
   }
