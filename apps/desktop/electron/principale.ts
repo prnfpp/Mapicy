@@ -13,7 +13,7 @@ import {
 import type { Documento } from '@mapicy/core'
 import * as archivio from './archivio.js'
 import { ErroreAccesso, accediConGoogle } from './sso.js'
-import { CANALI, type EsitoEsportazione, type FileLetto, type Identita, type ImpostazioniApp, type RichiestaEsportazione } from './ponte.js'
+import { CANALI, CHIUSURA, type EsitoEsportazione, type FileLetto, type Identita, type ImpostazioniApp, type RichiestaEsportazione } from './ponte.js'
 
 const INDIRIZZO_SVILUPPO = process.env.MAPICY_DEV_URL
 let finestra: BrowserWindow | null = null
@@ -64,6 +64,30 @@ function creaFinestra(): void {
       evento.preventDefault()
       if (url.startsWith('https://')) void shell.openExternal(url)
     }
+  })
+
+  /**
+   * Alla chiusura il salvataggio dell'interfaccia può essere ancora in coda:
+   * si scrive su disco poco dopo l'ultima modifica, non a ogni tasto. Qui la
+   * chiusura viene sospesa, si chiede all'interfaccia di svuotare la coda, e
+   * solo dopo la conferma la finestra si chiude. Con un limite di tempo: una
+   * finestra che non si chiude più è peggio di un'ultima modifica persa.
+   */
+  let chiusuraConsentita = false
+  finestra.on('close', (evento) => {
+    if (chiusuraConsentita || !finestra) return
+    evento.preventDefault()
+    const questa = finestra
+    const chiudiDavvero = () => {
+      chiusuraConsentita = true
+      questa.close()
+    }
+    const scadenza = setTimeout(chiudiDavvero, 5000)
+    ipcMain.once(CHIUSURA.pronta, () => {
+      clearTimeout(scadenza)
+      chiudiDavvero()
+    })
+    questa.webContents.send(CHIUSURA.richiesta)
   })
 
   finestra.on('closed', () => {
@@ -272,7 +296,8 @@ if (!app.requestSingleInstanceLock()) {
     }
   })
 
-  void app.whenReady().then(() => {
+  void app.whenReady().then(async () => {
+    await archivio.pulisciResidui()
     registraGestori()
     creaFinestra()
     app.on('activate', () => {

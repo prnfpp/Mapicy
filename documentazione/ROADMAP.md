@@ -8,7 +8,8 @@ Stato dei lavori. Quello che c'è, quello che manca, e quello che è stato decis
 - **Core** — documento con `schemaVersion` e migrazioni, derivazioni dal catalogo, 17 controlli automatici, riconciliazione a quattro esiti, campagne di verifica, cruscotto.
 - **Import guidato** — parser per CSV, TSV e testo incollato, riconoscimento colonne, mappatura dei ruoli dichiarati, anteprima prima della conferma.
 - **Esportazioni** — JSON (backup completo reimportabile), Excel, PDF (scheda asset, registro, controlli, verbale di chiusura campagna).
-- **App desktop** — setup iniziale accompagnato, cruscotto, anagrafica asset, registro accessi, import, controlli, persone, esportazioni.
+- **App desktop** — setup iniziale accompagnato in cinque passi, cruscotto, controlli, registro accessi, asset, persone, import, esportazioni, archivio e impostazioni. Salvataggio automatico ritardato, copie di sicurezza a ogni scrittura che cambia qualcosa, accesso con Google Workspace opzionale.
+- **Due verifiche automatiche** — una guida l'interfaccia in un browser, l'altra l'applicativo Electron vero, comprese le operazioni su disco e la generazione del PDF. Vedi il README.
 
 ## Prossimi passi
 
@@ -33,4 +34,14 @@ Un connettore non deve poter scrivere: `scope` in sola lettura, sempre. Le crede
 
 **Scrittura sulle piattaforme.** Mapicy non revoca accessi. La revoca si esegue sulla piattaforma e poi si registra qui con la data. Un applicativo che può togliere l'accesso a ventisette persone con un clic sbagliato è un rischio operativo che non vale la comodità.
 
-**Conservare le estrazioni per sempre.** Sono dati personali con una finalità precisa e a tempo: servono a riconciliare una campagna. Le estrazioni vecchie di due campagne non servono a niente e vanno tolte. Non è ancora implementato ed è il primo debito da pagare.
+**Conservare le estrazioni per sempre.** Sono dati personali con una finalità precisa e a tempo: servono a riconciliare una campagna. Un import sostituisce le righe dell'asset che riguarda, quindi non si accumulano fotografie dello stesso asset; ma le righe di un asset dismesso restano, e non esiste ancora una cancellazione periodica. È il primo debito da pagare.
+
+## Difetti trovati dalle verifiche automatiche e corretti
+
+Vale tenerne traccia, perché dicono a che cosa servono quelle due verifiche:
+
+- I `label` non erano associati ai campi: il controllo stava accanto all'etichetta, non dentro. Chi usa un lettore di schermo non sentiva il nome del campo.
+- Un nuovo asset nasceva con la prima piattaforma in ordine alfabetico già selezionata, e si poteva salvare una Pagina Facebook come account Brevo per distrazione.
+- Il riquadro di sintesi del cruscotto era verde anche con quattro controlli da correggere.
+- La chiusura della finestra non attendeva il salvataggio in coda, e lasciava accanto all'archivio un file temporaneo che faceva pensare a un archivio rotto.
+- Lo script che genera gli alias dei ruoli ha intercettato due mappature che puntavano a profili inesistenti, prima che entrassero nel catalogo.

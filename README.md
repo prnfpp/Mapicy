@@ -21,12 +21,21 @@ Node.js 20 o successivo, per lo sviluppo. L'applicativo impacchettato non richie
 ## Comandi
 
 ```
-npm install          installa le dipendenze
-npm run dev          avvia l'app in sviluppo
-npm test             esegue i test del core
-npm run typecheck    controlla i tipi
-npm run impacchetta  crea l'eseguibile per il sistema in uso
+npm install             installa le dipendenze
+npm test                esegue i test del core e del catalogo
+npm run typecheck       controlla i tipi
+npm run build           compila interfaccia e processo principale
+npm run impacchetta     crea l'eseguibile per il sistema in uso
+npm run verifica:ui     guida un browser attraverso tutto il percorso
 ```
+
+Per lo sviluppo dell'applicativo: `npm run dev -w @mapicy/desktop` avvia l'interfaccia su `http://localhost:5199`, dove funziona con un archivio in memoria. Per la finestra vera, `npm run dev:app -w @mapicy/desktop` con `MAPICY_DEV_URL` impostato su quell'indirizzo.
+
+### Le due verifiche automatiche
+
+`npm run verifica:ui` serve la build a un browser e la guida dall'inizio alla fine — configurazione, import di un elenco, censimento automatico, verifica di un accesso, controlli — e fallisce se la console riporta un errore. Richiede `npx playwright install chromium`.
+
+`npm run verifica:electron -w @mapicy/desktop` fa la stessa cosa con l'applicativo vero, e in più controlla le cose che solo il processo principale può fare: l'archivio scritto su disco e riletto, le copie di sicurezza, la generazione del PDF, e che alla chiusura la coda di salvataggio venga svuotata senza lasciare file temporanei. Serve uno schermo; dove non c'è, `xvfb-run -a`.
 
 ## Struttura
 

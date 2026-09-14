@@ -10,7 +10,8 @@
     "compila:electron": "node costruisci-electron.mjs",
     "build": "vite build && npm run compila:electron",
     "impacchetta": "npm run build && electron-builder",
-    "verifica:ui": "node verifica-ui.mjs"
+    "verifica:ui": "node verifica-ui.mjs",
+    "verifica:electron": "node verifica-electron.mjs"
   },
   "dependencies": {
     "@mapicy/catalogo": "0.1.0",

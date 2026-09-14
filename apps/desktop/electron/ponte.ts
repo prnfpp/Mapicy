@@ -63,6 +63,12 @@ export interface FileLetto {
 }
 
 export interface ApiMapicy {
+  /**
+   * Registra la funzione da eseguire quando la finestra sta per chiudersi. Il
+   * processo principale aspetta la conferma prima di chiudere davvero, così un
+   * salvataggio ancora in coda non va perso.
+   */
+  allaChiusura(salva: () => Promise<void>): void
   /** Apre l'archivio predefinito. `null` se non esiste ancora: è il primo avvio. */
   apriPredefinito(): Promise<ArchivioAperto | null>
   salva(documento: Documento): Promise<{ salvatoIl: string }>
@@ -90,6 +96,7 @@ export interface ApiMapicy {
  * refuso diventa una chiamata che non risponde mai, senza errore di compilazione.
  */
 export const CANALI = {
+  allaChiusura: 'chiusura:registra',
   apriPredefinito: 'archivio:apriPredefinito',
   salva: 'archivio:salva',
   scegliArchivio: 'archivio:scegli',
@@ -106,6 +113,14 @@ export const CANALI = {
   accediConGoogle: 'identita:accediGoogle',
   esci: 'identita:esci',
 } as const satisfies Record<keyof ApiMapicy, string>
+
+/** Canali della chiusura, che non sono richieste con risposta ma un giro di annunci. */
+export const CHIUSURA = {
+  /** Dal processo principale all'interfaccia: sto per chiudere, svuota la coda. */
+  richiesta: 'chiusura:richiesta',
+  /** Dall'interfaccia al processo principale: ho finito, puoi chiudere. */
+  pronta: 'chiusura:pronta',
+} as const
 
 declare global {
   interface Window {

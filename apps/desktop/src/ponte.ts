@@ -48,6 +48,11 @@ function pontePerProva(): ApiMapicy {
   }
 
   return {
+    allaChiusura: (salva) => {
+      // Nel browser l'equivalente della chiusura della finestra è
+      // `beforeunload`, che non può attendere: si fa il possibile.
+      window.addEventListener('beforeunload', () => void salva())
+    },
     apriPredefinito: async (): Promise<ArchivioAperto | null> => {
       const documento = leggi()
       return documento

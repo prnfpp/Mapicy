@@ -1,5 +1,5 @@
 import { contextBridge, ipcRenderer } from 'electron'
-import { CANALI, type ApiMapicy } from './ponte.js'
+import { CANALI, CHIUSURA, type ApiMapicy } from './ponte.js'
 
 /**
  * L'unico punto di contatto fra l'interfaccia e il resto del mondo.
@@ -11,6 +11,14 @@ import { CANALI, type ApiMapicy } from './ponte.js'
  * incollato di raggiungere il disco.
  */
 const api: ApiMapicy = {
+  allaChiusura: (salva) => {
+    ipcRenderer.on(CHIUSURA.richiesta, () => {
+      // Qualunque esito: il processo principale va sbloccato, altrimenti la
+      // finestra non si chiude più. Un salvataggio fallito è già segnalato
+      // nell'interfaccia.
+      void salva().finally(() => ipcRenderer.send(CHIUSURA.pronta))
+    })
+  },
   apriPredefinito: () => ipcRenderer.invoke(CANALI.apriPredefinito),
   salva: (documento) => ipcRenderer.invoke(CANALI.salva, documento),
   scegliArchivio: () => ipcRenderer.invoke(CANALI.scegliArchivio),

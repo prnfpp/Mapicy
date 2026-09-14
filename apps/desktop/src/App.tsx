@@ -92,16 +92,19 @@ export function App() {
     }, ATTESA_SALVATAGGIO)
   }, [])
 
-  // Un salvataggio in attesa non deve andare perso quando si chiude la finestra.
+  /**
+   * Un salvataggio in coda non deve andare perso alla chiusura. Il processo
+   * principale sospende la chiusura e aspetta che questa funzione abbia
+   * finito: qui si può attendere davvero la scrittura su disco, che con
+   * `beforeunload` non era possibile.
+   */
   useEffect(() => {
-    const allaChiusura = () => {
-      if (attesa.current && daSalvare.current) {
-        clearTimeout(attesa.current)
-        void ponte().salva(daSalvare.current)
-      }
-    }
-    window.addEventListener('beforeunload', allaChiusura)
-    return () => window.removeEventListener('beforeunload', allaChiusura)
+    ponte().allaChiusura(async () => {
+      if (!attesa.current || !daSalvare.current) return
+      clearTimeout(attesa.current)
+      attesa.current = null
+      await ponte().salva(daSalvare.current)
+    })
   }, [])
 
   const aggiorna = useCallback(

@@ -39,9 +39,31 @@ function adesso(): string {
 }
 
 async function scriviAtomico(percorso: string, contenuto: string): Promise<void> {
-  const temporaneo = `${percorso}.parziale`
-  await writeFile(temporaneo, contenuto, 'utf8')
-  await rename(temporaneo, percorso)
+  // Il nome temporaneo porta un suffisso unico: due salvataggi ravvicinati
+  // scriverebbero sullo stesso file e il secondo rinomineresti un file già
+  // spostato.
+  const temporaneo = `${percorso}.${process.pid}-${contatoreScritture++}.parziale`
+  try {
+    await writeFile(temporaneo, contenuto, 'utf8')
+    await rename(temporaneo, percorso)
+  } catch (errore) {
+    await unlink(temporaneo).catch(() => undefined)
+    throw errore
+  }
+}
+
+let contatoreScritture = 0
+
+/**
+ * Toglie i file temporanei rimasti da una chiusura brusca. Non sono dannosi,
+ * ma un `mapicy-archivio.json.parziale` accanto all'archivio fa pensare che
+ * l'archivio sia rotto, e chi lo vede si spaventa per niente.
+ */
+export async function pulisciResidui(): Promise<void> {
+  const cartella = cartellaDati()
+  if (!existsSync(cartella)) return
+  const residui = (await readdir(cartella)).filter((n) => n.endsWith('.parziale'))
+  await Promise.all(residui.map((n) => unlink(join(cartella, n)).catch(() => undefined)))
 }
 
 async function leggiDocumento(percorso: string): Promise<Documento> {
