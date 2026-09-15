@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "Mappatura degli accessi e dei trattamenti per un'agenzia di comunicazione. Locale, senza server, con esportazioni per il DPO.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prnfpp/Mapicy.git"
+  },
   "type": "module",
   "workspaces": [
     "packages/*",
@@ -14,6 +18,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "dev": "npm run dev -w @mapicy/desktop",
     "build": "npm run build -w @mapicy/desktop",
+    "avvia": "npm run build && npm run avvia -w @mapicy/desktop",
     "impacchetta": "npm run impacchetta -w @mapicy/desktop",
     "verifica:ui": "npm run verifica:ui -w @mapicy/desktop"
   },

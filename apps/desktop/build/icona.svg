@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!--
+    Icona dell'applicativo. Tre righe di registro e una chiave: la mappatura
+    degli accessi. Deve restare leggibile a 16 pixel, quindi poche forme
+    grandi e nessun dettaglio sottile.
+  -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a56d6"/>
+      <stop offset="1" stop-color="#15328f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#fondo)"/>
+  <g fill="#ffffff">
+    <!-- le righe del registro -->
+    <rect x="96" y="132" width="200" height="30" rx="15"/>
+    <rect x="96" y="212" width="152" height="30" rx="15" opacity="0.72"/>
+    <rect x="96" y="292" width="120" height="30" rx="15" opacity="0.48"/>
+    <!-- la chiave: cerchio e gambo con un dente -->
+    <path d="M356 150a68 68 0 1 0-36 126v104a16 16 0 0 0 16 16h40a16 16 0 0 0 16-16v-18h30a14 14 0 0 0 14-14v-28a14 14 0 0 0-14-14h-30v-30a68 68 0 0 0-36-126zm0 56a28 28 0 1 1 0 56 28 28 0 0 1 0-56z"/>
+  </g>
+</svg>

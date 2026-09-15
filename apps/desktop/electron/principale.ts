@@ -41,6 +41,9 @@ function creaFinestra(): void {
     minHeight: 640,
     title: 'Mapicy',
     backgroundColor: '#f6f6f4',
+    // Su Linux l'icona della finestra si imposta qui; su macOS e Windows la
+    // prende dal pacchetto costruito da electron-builder.
+    icon: join(__dirname, '..', 'build', 'icon.png'),
     webPreferences: {
       preload: join(__dirname, 'preload.cjs'),
       contextIsolation: true,
@@ -155,16 +158,29 @@ async function eseguiEsportazione(richiesta: RichiestaEsportazione): Promise<Esi
     }
   }
 
-  const scelta = await dialogoSalva({
-    title: 'Salva l’esportazione',
-    defaultPath: nome,
-    filters: filtri,
-  })
-  if (scelta.canceled || !scelta.filePath) return null
+  /*
+   * MAPICY_CARTELLA_ESPORTAZIONI salta il dialogo e scrive direttamente in
+   * quella cartella. Serve alla verifica automatica, che non può interagire
+   * con un dialogo di sistema, e all'esportazione non presidiata se un giorno
+   * servisse. Senza la variabile il comportamento è quello normale: si scrive
+   * solo dove la persona ha scelto.
+   */
+  const senzaDialogo = process.env.MAPICY_CARTELLA_ESPORTAZIONI
+  const destinazione = senzaDialogo
+    ? join(senzaDialogo, nome)
+    : await (async () => {
+        const scelta = await dialogoSalva({
+          title: 'Salva l’esportazione',
+          defaultPath: nome,
+          filters: filtri,
+        })
+        return scelta.canceled ? null : scelta.filePath
+      })()
+  if (!destinazione) return null
 
-  if (typeof contenuto === 'string') await writeFile(scelta.filePath, contenuto, 'utf8')
-  else await writeFile(scelta.filePath, contenuto)
-  return { percorso: scelta.filePath, nomeFile: nome }
+  if (typeof contenuto === 'string') await writeFile(destinazione, contenuto, 'utf8')
+  else await writeFile(destinazione, contenuto)
+  return { percorso: destinazione, nomeFile: nome }
 }
 
 function generaHtml(

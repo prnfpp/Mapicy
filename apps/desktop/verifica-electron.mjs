@@ -125,12 +125,53 @@ const byte = await app.evaluate(async ({ BrowserWindow }) => {
 if (byte.intestazione !== '%PDF-') problemi.push(`printToPDF non ha prodotto un PDF: ${JSON.stringify(byte)}`)
 console.log(`   PDF di ${(byte.lunghezza / 1024).toFixed(1)} kB, intestazione ${byte.intestazione}`)
 
-console.log('9. i controlli segnalano quello che l’import non poteva sapere')
+console.log('9. tutti i formati di esportazione producono un file valido')
+// Il processo principale scrive nella cartella indicata da
+// MAPICY_CARTELLA_ESPORTAZIONI invece di aprire il dialogo di sistema.
+// Ogni formato si controlla per quello che deve essere, non per la sua
+// dimensione: un numero di byte arbitrario è un test che si rompe appena
+// cambia un testo. Per l'xlsx si cerca il nome di un foglio dentro lo zip,
+// che è la prova che exceljs nel bundle ha prodotto una cartella di lavoro
+// vera e non un file vuoto.
+const attesi = {
+  json: { inizio: '{', contiene: '"schemaVersion"' },
+  excel: { inizio: 'PK', contiene: 'xl/worksheets/sheet1.xml' },
+  'pdf-registro': { inizio: '%PDF-' },
+  'pdf-controlli': { inizio: '%PDF-' },
+  'pdf-scheda': { inizio: '%PDF-' },
+}
+for (const [formato, atteso] of Object.entries(attesi)) {
+  const ambito = formato === 'pdf-scheda' ? { tipo: 'asset', codiceAsset: codice } : { tipo: 'tutto' }
+  const esito = await pagina.evaluate(
+    ([formato, ambito, documento]) =>
+      window.mapicy
+        .esporta({ formato, ambito, documento, oggi: '2026-09-15' })
+        .catch((e) => ({ errore: String(e) })),
+    [formato, ambito, archivio],
+  )
+  if (esito?.errore || !esito?.percorso) {
+    problemi.push(`Esportazione ${formato} non riuscita: ${esito?.errore ?? 'nessun percorso'}`)
+    continue
+  }
+  const dati = await readFile(esito.percorso)
+  const testo = dati.toString('latin1')
+  if (!testo.startsWith(atteso.inizio)) {
+    problemi.push(`${formato}: non inizia con "${atteso.inizio}" ma con "${testo.slice(0, 8)}"`)
+  } else if (atteso.contiene && !testo.includes(atteso.contiene)) {
+    problemi.push(`${formato}: dentro il file manca "${atteso.contiene}"`)
+  } else if (dati.length < 1024) {
+    problemi.push(`${formato}: solo ${dati.length} byte, il file è troppo piccolo per contenere qualcosa`)
+  } else {
+    console.log(`   ${formato}: ${(dati.length / 1024).toFixed(1)} kB`)
+  }
+}
+
+console.log('10. i controlli segnalano quello che l’import non poteva sapere')
 await pagina.getByRole('button', { name: /^Controlli/ }).click()
 await pagina.waitForSelector('text=C13')
 await pagina.screenshot({ path: `${scatti}/electron-controlli.png`, fullPage: true })
 
-console.log('10. alla chiusura la coda viene svuotata e non resta spazzatura')
+console.log('11. alla chiusura la coda viene svuotata e non resta spazzatura')
 // Una modifica appena prima di chiudere: il processo principale deve
 // sospendere la chiusura, aspettare la scrittura, e non lasciare temporanei.
 await pagina.getByRole('button', { name: /^Archivio e impostazioni/ }).click()

@@ -11,9 +11,14 @@ const comune = {
   target: 'node20',
   format: 'cjs',
   sourcemap: true,
-  // `electron` lo fornisce il runtime. `exceljs` resta fuori dal bundle perché
-  // è una dipendenza Node normale e impacchettarla non porta vantaggi.
-  external: ['electron', 'exceljs'],
+  // Solo `electron` resta fuori: lo fornisce il runtime.
+  //
+  // `exceljs` va dentro il bundle di proposito. In un monorepo npm le
+  // dipendenze finiscono nella cartella condivisa alla radice, non in quella
+  // dell'app: lasciata fuori, l'applicativo impacchettato non la troverebbe e
+  // l'esportazione in Excel andrebbe in errore soltanto sulla macchina di chi
+  // lo installa. Bundle più grosso, applicativo che funziona.
+  external: ['electron'],
   logLevel: 'info',
 }
 

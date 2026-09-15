@@ -14,9 +14,20 @@ Mapicy fa tre cose che l'Excel non può fare:
 2. **Confronta il registro con la realtà.** Si incolla o si importa l'elenco utenti esportato dalla piattaforma e il confronto è automatico: coincide, manca, è di troppo, ha un profilo diverso.
 3. **Accompagna passo per passo.** Ogni campo dice a cosa serve; ogni piattaforma ha la sua guida con il percorso esatto da seguire per trovare il dato richiesto.
 
-## Requisiti
+## Provarlo
 
-Node.js 20 o successivo, per lo sviluppo. L'applicativo impacchettato non richiede nulla di installato.
+Serve **Node.js 20 o successivo** e nient'altro: né database, né server, né compilatori.
+
+```
+git clone https://github.com/prnfpp/Mapicy.git
+cd Mapicy
+npm install
+npm run avvia
+```
+
+Per l'installabile da dare all'amministrazione, `npm run impacchetta`: produce un `.dmg` su macOS e un installatore `.exe` su Windows. Un pacchetto per Mac si costruisce soltanto su un Mac, e l'applicativo non è firmato con un certificato, quindi al primo avvio su una macchina diversa da quella che l'ha costruito compare un avviso di sicurezza da superare una volta sola.
+
+Tutto questo, con i percorsi dei dati, gli avvisi di macOS e Windows e un giro di prova da venti minuti su un cliente vero: **[documentazione/COME-PROVARLO.md](documentazione/COME-PROVARLO.md)**.
 
 ## Comandi
 

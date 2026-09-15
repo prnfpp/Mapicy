@@ -80,6 +80,20 @@ L'alternativa era un'app web locale da avviare da terminale. L'applicativo lo us
 
 Il processo principale è l'unico che tocca il disco. Il renderer non ha accesso a Node (`contextIsolation`, `nodeIntegration: false`) e comunica per IPC su un canale tipizzato dichiarato in `preload`. Non è cerimonia: è quello che impedisce a una stringa incollata dentro un'estrazione di diventare codice eseguito.
 
+## Impacchettamento
+
+Quattro dettagli che sembrano minuzie e sono la differenza fra un pacchetto che parte e uno che no. Stanno scritti qui perché nessuno di essi si scopre leggendo il codice.
+
+**Tutto va nel bundle, anche `exceljs`.** In un monorepo npm le dipendenze finiscono nella cartella condivisa alla radice, non in quella dell'app. Lasciata fuori dal bundle, `exceljs` non verrebbe trovata dall'applicativo impacchettato e l'esportazione in Excel andrebbe in errore soltanto sulla macchina di chi lo installa — il tipo di guasto che non si vede mai in sviluppo. Per la stessa ragione i pacchetti `@mapicy/*` sono dichiarati fra le dipendenze di compilazione: a runtime non esistono, esiste il bundle.
+
+**`electronVersion` è dichiarata a mano.** In un monorepo electron-builder non trova il modulo `electron` nella cartella alla radice e si rifiuta di indovinare quale versione impacchettare.
+
+**`executableName` è dichiarato a mano.** Senza, l'eseguibile prende il nome del pacchetto npm: `@mapicydesktop`, chiocciola compresa.
+
+**`productName` sta in cima al `package.json`, non solo dentro `build`.** Electron ricava da lì il nome della cartella dati. Senza, in sviluppo l'archivio finirebbe in `@mapicy/desktop` — due cartelle annidate — e in un percorso diverso da quello dell'applicativo impacchettato: chi prova con `npm run avvia` e poi installa il pacchetto troverebbe l'applicativo vuoto e penserebbe di aver perso tutto.
+
+`MAPICY_CARTELLA_ESPORTAZIONI` fa scrivere le esportazioni in quella cartella invece di aprire il dialogo di sistema. Esiste perché le verifiche automatiche non possono interagire con un dialogo nativo, e senza quella variabile l'esportazione — la parte con più pezzi mobili, fra `exceljs` e il motore di stampa — resterebbe l'unica cosa che nessun controllo tocca. Senza la variabile il comportamento è quello normale: si scrive solo dove la persona ha scelto.
+
 ## Identità e SSO
 
 Su un applicativo locale il login non è una barriera di sicurezza — i dati sono sul disco di chi lo usa, e la barriera è l'account del sistema operativo con la cifratura del disco. Serve a due altre cose, entrambe concrete: **timbrare il registro** (il campo "verificato da" di ogni riga verificata deve essere un'identità, non un nome digitato a mano) e **riusare la stessa autorizzazione Google** quando arriveranno i connettori API per GA4 e Google Ads.
